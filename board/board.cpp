@@ -4,21 +4,32 @@ using namespace std;
 
 using BoardPair = std::pair<Bitboard&, Bitboard&>;
 
+const Bitboard NOT_0_FILE = 0xfefefefefefefefeULL;
+const Bitboard NOT_7_FILE = 0x7f7f7f7f7f7f7f7fULL;
+
 Board::Board(){
-    whitePieces = 0;
-    redPieces = 0;
+    whitePieces = 6172839697753047040;
+    redPieces = 11163050;
     queenPieces = 0;
 
-    for(int i = 0; i < 4; i++){
-        redPieces = redPieces | 1ULL<<(2*i+1);
-        redPieces = redPieces | (1ULL<<(2*i+8));
-        redPieces = redPieces | (1ULL<<(2*i+17));
-        
-        whitePieces = whitePieces | 1ULL<<(2*i+ 8*7);
-        whitePieces = whitePieces | 1ULL<<(2*i+ 8*6+1);
-        whitePieces = whitePieces | 1ULL<<(2*i+ 8*5);
-    }
+    whitePieceNum = 12;
+    redPieceNum = 12;
+    whiteKingNum = 0;
+    redKingNum = 0;
+
 }
+
+ Board::Board(Bitboard wP, Bitboard rP, Bitboard qP){
+    whitePieces = wP;
+    redPieces = rP;
+    queenPieces = qP;
+
+    whitePieceNum = __builtin_popcountll(wP);
+    redPieceNum   = __builtin_popcountll(rP);
+    whiteKingNum  = __builtin_popcountll(wP & qP);
+    redKingNum    = __builtin_popcountll(rP & qP);
+ }
+
 bool Board::locatePiece(int r, int c){
     Bitboard completeBoard = redPieces | whitePieces;
 
@@ -27,158 +38,187 @@ bool Board::locatePiece(int r, int c){
     return (completeBoard&pos) != 0;
 }
 
+bool Board::locatePiece(Bitboard pos){
+    Bitboard completeBoard = redPieces | whitePieces;
+
+    return (completeBoard&pos) != 0;
+}
+
 pair<Bitboard*,Bitboard*> Board::definePlayerEnemy(int r, int c){
     Bitboard pos = 1ULL<<(c+ 8*r);
 
-    if ((redPieces & pos) != 0) {
-        return { &redPieces, &whitePieces }; 
-    }
-    else if ((whitePieces & pos) != 0) {
-        return { &whitePieces, &redPieces };
-    }
+    return definePlayerEnemy(pos);
+}
+
+pair<Bitboard*,Bitboard*> Board::definePlayerEnemy(Bitboard pos){
+    if (redPieces & pos) return { &redPieces, &whitePieces }; 
+    else if (whitePieces & pos)return { &whitePieces, &redPieces };
     return  {nullptr, nullptr };
 }
 
 
 
-bool Board::jump(int r, int c,bool rl, bool ud){
+int Board::jump(int r, int c,bool rl, bool ud){
     Bitboard pos = 1ULL<<(c+ 8*r);
-    auto [myBoard, enemyBoard] =  definePlayerEnemy(r,c);
+    return jump(pos,rl,ud);
+}
+
+int Board::jump(Bitboard pos,bool rl, bool ud){
+    auto [myBoard, enemyBoard] =  definePlayerEnemy(pos);
+    Bitboard completeBoard = redPieces | whitePieces;
+
+    int udTo = ud? 1:-1;
+    int rlTo = rl? 1:-1;
+    
+    Bitboard ady = 0;
+    Bitboard suc = 0;
+
+    ady = ud?((pos<<(rl?9:7)) & (rl? NOT_0_FILE:NOT_7_FILE)):
+             ((pos>>(rl?7:9)) & (rl? NOT_0_FILE:NOT_7_FILE));
+
+    
+    suc = ud?((pos<<(rl?18:14)) & (rl? NOT_0_FILE:NOT_7_FILE)):
+             ((pos>>(rl?14:18)) & (rl? NOT_0_FILE:NOT_7_FILE));
+
+
+    if(ady == 0 || suc == 0) return false;
+
+    if((ady & *enemyBoard) && (suc & completeBoard) == 0){
+        *myBoard &= ~pos;
+        *myBoard |= suc;
+        *enemyBoard &=~ady;
+        int* enemyNum = (*enemyBoard&redPieces)? &redPieceNum : &whitePieceNum;
+
+        (*enemyNum)--;
+
+        if((ady& queenPieces)){
+            queenPieces &= ~ady;
+            int* enemyKingNum = (*enemyBoard&redPieces)? &redKingNum : &whiteKingNum;
+            (*enemyKingNum)--;
+        }
+
+        if((pos&queenPieces)== 0){
+            int r = __builtin_ctzll(suc) / 8;
+            
+            if(r == 0 || r == 7){
+                queenPieces |= suc;
+                int* myKingNum = (*myBoard&redPieces)!= 0? &redKingNum : &whiteKingNum;
+                (*myKingNum)++;
+            }
+            if(canJump(suc,rl,ud)||
+               canJump(suc,!rl,ud)){
+                return 2;
+            }
+        }
+        else{
+            queenPieces &= ~pos;
+            queenPieces |= suc;
+            if(canJump(suc,rl,ud)||
+               canJump(suc,!rl,ud)||
+               canJump(suc,rl,!ud)||
+               canJump(suc,!rl,!ud)){
+                return 2;
+            }   
+        }
+        return 1;
+    }
+    
+    return 0;
+}
+
+bool Board::canJump(int r, int c, bool rl,bool ud){
+    Bitboard pos = 1ULL<<(c+ 8*r);
+    return canJump(pos,rl,ud);
+}
+
+bool Board::canJump(Bitboard pos, bool rl,bool ud){
+
+    auto [myBoard, enemyBoard] =  definePlayerEnemy(pos);
     Bitboard completeBoard = redPieces | whitePieces;
 
     Bitboard ady = 0;
     Bitboard suc = 0;
 
+    ady = ud?((pos<<(rl?9:7)) & (rl? NOT_0_FILE:NOT_7_FILE)):
+             ((pos>>(rl?7:9)) & (rl? NOT_0_FILE:NOT_7_FILE));
 
-    if(r-2 >= 0 && !ud){
-        if (c+2 <8 && rl)  {
-            ady |= 1ULL<<(c+1 + 8*(r-1));
-            suc |= 1ULL<<(c+2 + 8*(r-2));
-        }
-        if (c-2 >-1 && !rl) {
-            ady |= 1ULL<<(c-1 + 8*(r-1));
-            suc |= 1ULL<<(c-2 + 8*(r-2));
-        }
-
-    }
-    if(r+2 < 8 && ud){
-        if (c+2 <8 && rl)  {
-            ady |= 1ULL<<(c+1 + 8*(r+1));
-            suc |= 1ULL<<(c+2 + 8*(r+2));
-        }
-        if (c-2 >-1 && !rl) {
-            ady |= 1ULL<<(c-1 + 8*(r+1));
-            suc |= 1ULL<<(c-2 + 8*(r+2));
-        }
-    }
-    if((ady & *enemyBoard) && (suc & completeBoard) == 0){
-        *myBoard &= ~pos;
-        *myBoard |= suc;
-        if((pos& queenPieces) != 0){
-            queenPieces &= ~pos;
-            queenPieces |= suc;
-        }
-        
-        *enemyBoard &=~ady;
-        if((ady& queenPieces) != 0){
-            queenPieces &= ~ady;
-        }
-
-        if(r+(ud? 2 : -2) == 0 || (r+(ud? 2 : -2) == 7)){
-            queenPieces |= suc;
-        }
-        return true;
-    }
     
-    return false;
+    suc = ud?((pos<<(rl?18:14)) & (rl? NOT_0_FILE:NOT_7_FILE)):
+             ((pos>>(rl?14:18)) & (rl? NOT_0_FILE:NOT_7_FILE));
+
+
+    if(ady == 0 || suc == 0) return false;
+
+
+    return ((ady & *enemyBoard)!= 0 && (suc & completeBoard) == 0);
 }
 
-bool Board::canJump(int r, int c, bool rl){
+
+
+int Board::movePiece(int r, int c,bool rl){
+
     Bitboard pos = 1ULL<<(c+ 8*r);
-    auto [myBoard, enemyBoard] =  definePlayerEnemy(r,c);
-    Bitboard completeBoard = redPieces | whitePieces;
-    Bitboard upAdy = 0;
-    Bitboard dwAdy = 0;
 
-    Bitboard upSuc = 0;
-    Bitboard dwSuc = 0;
-    if(r-2 >= 0 ){
-        if (c+2 <8 && rl)  {
-            upAdy |= 1ULL<<(c+1 + 8*(r-1));
-            upSuc |= 1ULL<<(c+2 + 8*(r-2));
-        }
-        if (c-2 >-1 && !rl) {
-            upAdy |= 1ULL<<(c-1 + 8*(r-1));
-            upSuc |= 1ULL<<(c-2 + 8*(r-2));
-        }
-    }
-    if(r+2 < 8 ){
-        if (c+2 <8 && rl)  {
-            dwAdy |= 1ULL<<(c+1 + 8*(r+1));
-            dwSuc |= 1ULL<<(c+2 + 8*(r+2));
-        }
-        if (c-2 >-1 && !rl) {
-            dwAdy |= 1ULL<<(c-1 + 8*(r+1));
-            dwSuc |= 1ULL<<(c-2 + 8*(r+2));
-        }
-    }
-    
-    bool ret = false;
-    if((pos&redPieces)!= 0 || (pos&queenPieces) != 0){
-        if((dwAdy & *enemyBoard)!= 0 && (dwSuc & completeBoard) == 0){
-            ret = true;
-        }
-    }
-    if((pos&whitePieces)!= 0 || (pos&queenPieces) != 0){
-        if((upAdy & *enemyBoard)!= 0 && (upSuc & completeBoard) == 0){
-            ret = true;
-        }
-    }
-
-    return ret;
+    return movePiece(pos,rl);
 }
-
-
-
-bool Board::movePiece(int r, int c,bool rl){
-    if(!locatePiece(r,c)){
+int Board::movePiece(Bitboard pos,bool rl){
+    if(!locatePiece(pos)){
         return false;
     }
 
-    Bitboard pos = 1ULL<<(c+ 8*r);
-
     if((redPieces&pos) != 0){
-        return movePiece(r,c,rl,true);
+        return movePiece(pos,rl,true);
     }
     else{
-        return movePiece(r,c,rl,false);
+        return movePiece(pos,rl,false);
     }
+}
+
+bool Board::canMove(Bitboard pos, bool rl, bool ud){
+    Bitboard completeBoard = redPieces | whitePieces;
+    
+    Bitboard newPos = ud?((pos<<(rl?9:7)) & (rl? NOT_0_FILE:NOT_7_FILE)):
+                      ((pos>>(rl?7:9)) & (rl? NOT_0_FILE:NOT_7_FILE));
+
+    return  (completeBoard| newPos)== 0;
 }
 
 // rl = true si vas a la derecha
 // ud = true si vas arriba
-bool Board::movePiece(int r, int c, bool rl, bool ud){
-    if(!locatePiece(r,c)) return false;
-    auto [myBoard, enemyBoard] =  definePlayerEnemy(r,c);
-    Bitboard pos = 1ULL<<(c+8*r);
-    Bitboard newPos = 1ULL<<(c + (rl? 1 : -1) + 8*(r+(ud? 1 : -1)));
+int Board::movePiece(int r, int c, bool rl, bool ud){
     
-    if(canJump(r,c,rl)) return jump(r,c,rl,ud);
+    Bitboard pos = 1ULL<<(c+8*r);
+    return movePiece(pos,rl,ud);
+    
+}
+
+int Board::movePiece(Bitboard pos, bool rl, bool ud){
+    if(!locatePiece(pos)) return false;
+    auto [myBoard, enemyBoard] =  definePlayerEnemy(pos);
+    
+    Bitboard newPos = ud?((pos<<(rl?9:7)) & (rl? NOT_0_FILE:NOT_7_FILE)):
+             ((pos>>(rl?7:9)) & (rl? NOT_0_FILE:NOT_7_FILE));
+    
+    if(canJump(pos,rl,ud)) {
+        return jump(pos,rl,ud);
+    }
     
     if((newPos & *myBoard)!= 0 ||(newPos & *enemyBoard)!= 0 ) return false;
-
-    if((c == 0 && rl == false) || (c == 7 && rl == true)) return false;
-        if((r == 0 && ud == true) || (r == 7 && ud == false)) return false;
-        if((pos& queenPieces) != 0){
-            queenPieces &= ~pos;
-            queenPieces |= newPos;
-        }
-        *myBoard &= ~pos;
-        *myBoard |= newPos;
-        if(r+(ud? 1 : -1) == 0 || (r+(ud? 1 : -1) == 7)){
-            queenPieces |= newPos;
-        }
-        return true;
+    
+    if(newPos == 0) return false;
+    if((pos& queenPieces) != 0){
+        queenPieces &= ~pos;
+        queenPieces |= newPos;
+    }
+    *myBoard &= ~pos;
+    *myBoard |= newPos;
+    int r = __builtin_ctzll( newPos)/8;
+    if(r+(ud? 1 : -1) == 0 || (r+(ud? 1 : -1) == 7)){
+        queenPieces |= newPos;
+        int* myKingNum = (*myBoard&redPieces)!= 0? &redKingNum : &whiteKingNum;
+        (*myKingNum)++;
+    }
+    return true;
 }
 
 string Board::print(){
@@ -207,9 +247,9 @@ string Board::print(){
                 board += "| ";
             }
 
-            rpieces/=2;
-            wpieces/=2;
-            queen/=2;
+            rpieces>>= 1;
+            wpieces>>= 1;
+            queen>>= 1;
 
         }
         board+= "|\n";
@@ -218,4 +258,38 @@ string Board::print(){
     
 
     return board;
+}
+
+string Board::print(Bitboard bitboard){
+    string board;
+    for(int i = 0; i < 8; i++){
+        board+=to_string(i);
+        for(int j = 0; j < 8; j++){
+            if(bitboard%2 == 1){
+                board += "|#";
+            }
+            else{
+                board += "| ";
+            }
+            bitboard>>= 1;
+        }
+        board+= "|\n";
+    }
+    board+="  0 1 2 3 4 5 6 7";
+    return board;
+}
+
+Bitboard Board::getQueenPieces(){
+    return queenPieces;
+}
+
+Bitboard Board::getWhitePieces(){
+    return whitePieces;
+}
+Bitboard Board::getRedPieces(){
+    return redPieces;
+}
+
+BoardState Board::getAllBoards(){
+    return {whitePieces,redPieces,queenPieces};
 }
