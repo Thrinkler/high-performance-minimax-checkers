@@ -73,29 +73,30 @@ int Board::jump(Bitboard pos,bool rl, bool ud){
     Bitboard ady = 0;
     Bitboard suc = 0;
 
-    ady = ud?((pos<<(rl?9:7)) & (rl? NOT_0_FILE:NOT_7_FILE)):
-             ((pos>>(rl?7:9)) & (rl? NOT_0_FILE:NOT_7_FILE));
+    ady =  ud? rl ? ((pos & NOT_7_FILE) << 9) : ((pos & NOT_0_FILE) << 7):
+           rl ? ((pos & NOT_7_FILE) >> 7) : ((pos & NOT_0_FILE) >> 9);
 
     
-    suc = ud?((pos<<(rl?18:14)) & (rl? NOT_0_FILE:NOT_7_FILE)):
-             ((pos>>(rl?14:18)) & (rl? NOT_0_FILE:NOT_7_FILE));
+    suc = ud? rl ? ((ady & NOT_7_FILE) << 9) : ((ady & NOT_0_FILE) << 7):
+           rl ? ((ady & NOT_7_FILE) >> 7) : ((ady & NOT_0_FILE) >> 9);
 
 
     if(ady == 0 || suc == 0) return false;
-
+    
     if((ady & *enemyBoard) && (suc & completeBoard) == 0){
+        int* enemyNum = (*enemyBoard&redPieces)!=0? &redPieceNum : &whitePieceNum;
+        (*enemyNum)--;
+        if((ady& queenPieces)){
+            int* enemyKingNum = (*enemyBoard&redPieces)!= 0? &redKingNum : &whiteKingNum;
+            (*enemyKingNum)--;
+            queenPieces &= ~ady;
+        }
         *myBoard &= ~pos;
         *myBoard |= suc;
         *enemyBoard &=~ady;
-        int* enemyNum = (*enemyBoard&redPieces)? &redPieceNum : &whitePieceNum;
+        
 
-        (*enemyNum)--;
-
-        if((ady& queenPieces)){
-            queenPieces &= ~ady;
-            int* enemyKingNum = (*enemyBoard&redPieces)? &redKingNum : &whiteKingNum;
-            (*enemyKingNum)--;
-        }
+        
 
         if((pos&queenPieces)== 0){
             int r = __builtin_ctzll(suc) / 8;
@@ -139,16 +140,14 @@ bool Board::canJump(Bitboard pos, bool rl,bool ud){
     Bitboard ady = 0;
     Bitboard suc = 0;
 
-    ady = ud?((pos<<(rl?9:7)) & (rl? NOT_0_FILE:NOT_7_FILE)):
-             ((pos>>(rl?7:9)) & (rl? NOT_0_FILE:NOT_7_FILE));
-
-    
-    suc = ud?((pos<<(rl?18:14)) & (rl? NOT_0_FILE:NOT_7_FILE)):
-             ((pos>>(rl?14:18)) & (rl? NOT_0_FILE:NOT_7_FILE));
+    ady =  ud? rl ? ((pos & NOT_7_FILE) << 9) : ((pos & NOT_0_FILE) << 7):
+           rl ? ((pos & NOT_7_FILE) >> 7) : ((pos & NOT_0_FILE) >> 9);
+           
+    suc = ud? rl ? ((ady & NOT_7_FILE) << 9) : ((ady & NOT_0_FILE) << 7):
+           rl ? ((ady & NOT_7_FILE) >> 7) : ((ady & NOT_0_FILE) >> 9);
 
 
     if(ady == 0 || suc == 0) return false;
-
 
     return ((ady & *enemyBoard)!= 0 && (suc & completeBoard) == 0);
 }
@@ -175,12 +174,17 @@ int Board::movePiece(Bitboard pos,bool rl){
 }
 
 bool Board::canMove(Bitboard pos, bool rl, bool ud){
+    if ((pos & queenPieces) == 0) {
+        if ((pos & redPieces) && !ud) return false;
+        if ((pos & whitePieces) && ud) return false;
+    }
     Bitboard completeBoard = redPieces | whitePieces;
     
-    Bitboard newPos = ud?((pos<<(rl?9:7)) & (rl? NOT_0_FILE:NOT_7_FILE)):
-                      ((pos>>(rl?7:9)) & (rl? NOT_0_FILE:NOT_7_FILE));
+    Bitboard newPos = ud? rl ? ((pos & NOT_7_FILE) << 9) : ((pos & NOT_0_FILE) << 7):
+                          rl ? ((pos & NOT_7_FILE) >> 7) : ((pos & NOT_0_FILE) >> 9);
+    if(newPos == 0) return false;
 
-    return  (completeBoard| newPos)== 0;
+    return  (completeBoard & newPos)== 0;
 }
 
 // rl = true si vas a la derecha
@@ -196,8 +200,8 @@ int Board::movePiece(Bitboard pos, bool rl, bool ud){
     if(!locatePiece(pos)) return false;
     auto [myBoard, enemyBoard] =  definePlayerEnemy(pos);
     
-    Bitboard newPos = ud?((pos<<(rl?9:7)) & (rl? NOT_0_FILE:NOT_7_FILE)):
-             ((pos>>(rl?7:9)) & (rl? NOT_0_FILE:NOT_7_FILE));
+    Bitboard newPos = ud? rl ? ((pos & NOT_7_FILE) << 9) : ((pos & NOT_0_FILE) << 7):
+                          rl ? ((pos & NOT_7_FILE) >> 7) : ((pos & NOT_0_FILE) >> 9);
     
     if(canJump(pos,rl,ud)) {
         return jump(pos,rl,ud);
@@ -213,7 +217,7 @@ int Board::movePiece(Bitboard pos, bool rl, bool ud){
     *myBoard &= ~pos;
     *myBoard |= newPos;
     int r = __builtin_ctzll( newPos)/8;
-    if(r+(ud? 1 : -1) == 0 || (r+(ud? 1 : -1) == 7)){
+    if((r == 0 || (r == 7))&& (queenPieces& newPos) == 0){
         queenPieces |= newPos;
         int* myKingNum = (*myBoard&redPieces)!= 0? &redKingNum : &whiteKingNum;
         (*myKingNum)++;
@@ -290,6 +294,22 @@ Bitboard Board::getRedPieces(){
     return redPieces;
 }
 
+
+int Board::getWhiteNumPieces(){return whitePieceNum;}
+int Board::getRedNumPieces(){return redPieceNum;}
+int Board::getWhiteKingNumPieces(){return whiteKingNum;}
+int Board::getRedKingNumPieces(){return redKingNum;}
+
 BoardState Board::getAllBoards(){
     return {whitePieces,redPieces,queenPieces};
+}
+
+void Board::setAllBoards(BoardState boards, int whiteNum, int redNum, int wKnum,int rKNum){
+    whitePieces = boards.white;
+    redPieces = boards.red;
+    queenPieces = boards.queens;
+    whitePieceNum = whiteNum;
+    redPieceNum = redNum;
+    whiteKingNum = wKnum;
+    redKingNum = rKNum;
 }

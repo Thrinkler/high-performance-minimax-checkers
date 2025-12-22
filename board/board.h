@@ -8,8 +8,30 @@ struct BoardState {
     Bitboard white;
     Bitboard red;
     Bitboard queens;
+    bool operator==(const BoardState& other) const {
+        return (red == other.red) && 
+               (white == other.white) && 
+               (queens == other.queens);
+    }
 };
+namespace std {
+    template <>
+    struct hash<BoardState> {
+        size_t operator()(const BoardState& b) const {
+            hash<unsigned long long> hasher;
+            
+            size_t h1 = hasher(b.red);
+            size_t h2 = hasher(b.white);
+            size_t h3 = hasher(b.queens);
+            
+            size_t final_hash = h1;
+            final_hash ^= h2 + 0x9e3779b9 + (final_hash << 6) + (final_hash >> 2);
+            final_hash ^= h3 + 0x9e3779b9 + (final_hash << 6) + (final_hash >> 2);
 
+            return final_hash;
+        }
+    };
+}
 enum RLUD {
   RIGHT = true,
   LEFT = false,
@@ -61,7 +83,13 @@ class Board{
         Bitboard getRedPieces();
         Bitboard getQueenPieces();
 
+        int getWhiteNumPieces();
+        int getRedNumPieces();
+        int getWhiteKingNumPieces();
+        int getRedKingNumPieces();
+
         BoardState getAllBoards();
+        void setAllBoards(BoardState boards, int whiteNum, int redNum, int wKnum,int rKNum);
         
 
 };

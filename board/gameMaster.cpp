@@ -62,6 +62,9 @@ pair<Bitboard,Bitboard> GameMaster::definePlayerEnemy(){
 
 
 Bitboard GameMaster::getWhiteMoves(){
+    if(multiJumpPiecePos != 0){
+        return multiJumpPiecePos;
+    }
     Bitboard white = board->getWhitePieces();
     Bitboard red = board->getRedPieces();
     Bitboard emptySpaces = ~(white | red);
@@ -99,6 +102,9 @@ Bitboard GameMaster::getWhiteMoves(){
 }
 
 Bitboard GameMaster::getRedMoves(){
+    if(multiJumpPiecePos != 0){
+        return multiJumpPiecePos;
+    }
     Bitboard white = board->getWhitePieces();
     Bitboard red = board->getRedPieces();
     Bitboard emptySpaces = ~(white | red);
@@ -134,66 +140,102 @@ Bitboard GameMaster::getRedMoves(){
 }
 
 bool GameMaster::movePiece(int r, int c, bool rl, bool ud){
-    Bitboard validMoves = player? getWhiteMoves(): getRedMoves();
     Bitboard pos = 1ULL<<(c+ 8*r);
+    return movePiece(pos,rl,ud);
+}
+
+bool GameMaster::movePiece(Bitboard pos, bool rl, bool ud){
+    multiJumpPiecePos = 0;
+    Bitboard validMoves = player? getWhiteMoves(): getRedMoves();
+
     if((validMoves & pos)== 0) return false;
 
-    bool isJump = board->canJump(r,c,rl,ud);
+    bool isJump = board->canJump(pos,rl,ud);
     if(!isJump){
-        if(board->canJump(r,c,!rl,ud)) return false;
+        if(board->canJump(pos,!rl,ud)) return false;
         if((pos & board -> getQueenPieces())!= 0){
-            if(board->canJump(r,c,rl,!ud)|| board->canJump(r,c,!rl,!ud)) return false;
+            if(board->canJump(pos,rl,!ud)|| board->canJump(pos,!rl,!ud)) return false;
         }
     }
-
-    int turnContinues = board->movePiece(r,c,rl,ud);
+    Snapshot snap = Snapshot(board->getAllBoards(), 
+                             board->getWhiteNumPieces(), 
+                             board->getRedNumPieces(),
+                             board->getWhiteKingNumPieces(), 
+                             board->getRedKingNumPieces());
+    int playerKingNumBefore = player? board->getWhiteKingNumPieces(): board->getRedKingNumPieces();
+    int turnContinues = board->movePiece(pos,rl,ud);
     if(turnContinues == 0) return false;
+    bool becameQueen = (player? board->getWhiteKingNumPieces(): board->getRedKingNumPieces()) > playerKingNumBefore;
+
+    snap.changedTurns = (turnContinues == 1);
+    prevBoard.emplace(snap);
 
     if(turnContinues == 1) player = !player;
-    
-
+    else{
+        multiJumpPiecePos = ud? rl ? ((pos & NOT_7_FILE) << 18) : ((pos & NOT_0_FILE) << 14):
+                                rl ? ((pos & NOT_7_FILE) >> 14) : ((pos & NOT_0_FILE) >> 18);
+    }
     return true;
 }
 
-void GameMaster::addLastMove(int r, int c, bool rl, bool ud){
-
-}
 
 bool GameMaster::undoMove(){
-    
+    if (prevBoard.empty()) return false;
+    Snapshot lastBoard = prevBoard.top();
+    prevBoard.pop();
+    board->setAllBoards(lastBoard.boards, lastBoard.whiteNum, lastBoard.redNum,
+                          lastBoard.whiteKNum, lastBoard.redKNum);
+    multiJumpPiecePos = lastBoard.multijumpPiecePos;
+    if(lastBoard.changedTurns){
+        player = !player;
+    }
+    return true;
 }
 
 
 vector<Move> GameMaster::getPossibleMoves(){
-    Bitboard validMoves = player? getWhiteMoves(): getRedMoves();
+    Bitboard validMoves = multiJumpPiecePos != 0? multiJumpPiecePos : (player? getWhiteMoves(): getRedMoves());
     vector<Move> out;
     out.reserve(20);
     Bitboard move;
-
+   
+    vector <bool> dirUD = {UP, DOWN};
+    bool dirRL[] = {LEFT, RIGHT};
+    
+     bool canJ = false;
     while(validMoves){
         move = 1ULL<<__builtin_ctzll(validMoves);
+        if(move & board ->getQueenPieces()) dirUD = {UP, DOWN};
+        else{
+            if(player) dirUD = {UP};
+            else dirUD = {DOWN};
+        }
+       
+        for(bool ud : dirUD) 
+            for(bool rl : dirRL)
+                if(board->canJump(move,rl,ud)){
+                    out.emplace_back(move,rl,ud);
+                    canJ = true;
+                }
         
-        if((board ->canMove(move,RIGHT,UP) || board->canJump(move,RIGHT,UP))){
-            out.emplace_back(move,RIGHT,UP);
-        }
-        if((board ->canMove(move,LEFT,UP) || board->canJump(move,LEFT,UP))){
-            out.emplace_back(move,LEFT,UP);
-        }
-        if((board ->canMove(move,RIGHT,DOWN) || board->canJump(move,RIGHT,DOWN))){
-            out.emplace_back(move,RIGHT,DOWN);
-        }
-        if((board ->canMove(move,LEFT,DOWN) || board->canJump(move,LEFT,DOWN))){
-            out.emplace_back(move,LEFT,DOWN);
-        }
-
+        if(!canJ)
+            for(bool ud : dirUD)
+                for(bool rl : dirRL)
+                    if((board ->canMove(move,rl,ud))){
+                        out.emplace_back(move,rl,ud);
+                    }
         validMoves &= (validMoves - 1);
     }
     return out;
 }
 
+int GameMaster::whoWon(){
+    if((board->getRedNumPieces() == 1 && board->getWhiteNumPieces() == 1)) return 2;
+    if(board ->getRedNumPieces() == 0) return 1;
+    if(board -> getWhiteNumPieces() == 0) return -1;
+    return 0;
+}
 
 bool GameMaster::getPlayerPlaying(){
     return player;
 }
-
-
