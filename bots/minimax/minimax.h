@@ -14,13 +14,16 @@ using namespace std;
 
 class Minimax {
     private:
-        unordered_map<BoardState, int> umap;
+        unordered_map<BoardState, int> repetitionTable;
         int maxDepth;
         pair<int,Move> minimax(GameMaster& gm, int depth, int alpha = -INFINITY, int beta = INFINITY, bool player=false);
-        
+        pair<int,Move> quiescence(GameMaster& gm, int alpha = -INFINITY, int beta = INFINITY, bool player=false);
+
+        int heatmapValuation(GameMaster& gm, int turn);
 
     public:
         int evaluateBoard(GameMaster& gm, int turn, int depth = 0);
+        int evaluateBoard(bool oldEv, GameMaster& gm, int turn, int depth = 0);
         int evaluateBoard(GameMaster& gm, bool turn, int depth = 0);
         int betterEval(GameMaster& gm, int turn);
         Minimax(int depth);

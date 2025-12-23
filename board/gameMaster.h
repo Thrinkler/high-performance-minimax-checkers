@@ -62,6 +62,7 @@ class GameMaster{
         ~GameMaster();
 
         bool getPlayerPlaying();
+        bool changePlayerPlaying();
 
         Bitboard getWhiteMoves();
         Bitboard getRedMoves();
@@ -71,6 +72,9 @@ class GameMaster{
         int whoWon();
 
         vector<Move> getPossibleMoves();
+
+        int numberOfMoves();
+        bool hasToJump();
         bool movePiece(int r, int c, bool rl, bool ud);
         bool movePiece(Bitboard pos, bool rl, bool ud);
 

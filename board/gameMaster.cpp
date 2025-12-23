@@ -229,6 +229,40 @@ vector<Move> GameMaster::getPossibleMoves(){
     return out;
 }
 
+int GameMaster::numberOfMoves(){
+    Bitboard validMoves = multiJumpPiecePos != 0? multiJumpPiecePos : (player? getWhiteMoves(): getRedMoves());
+    int ret = 0;
+
+    while(validMoves){
+        ret++;
+        validMoves &= (validMoves - 1);
+    }
+    return ret;
+}
+
+bool GameMaster::hasToJump(){
+    Bitboard validMoves = multiJumpPiecePos != 0? multiJumpPiecePos : (player? getWhiteMoves(): getRedMoves());
+    if(validMoves == 0) return false;
+    Bitboard move = 1ULL<<__builtin_ctzll(validMoves);
+    vector <bool> dirUD = {UP, DOWN};
+    bool dirRL[] = {LEFT, RIGHT};
+    
+     bool canJ = false;
+    
+    if(move & board ->getQueenPieces()) dirUD = {UP, DOWN};
+    else{
+        if(player) dirUD = {UP};
+        else dirUD = {DOWN};
+    }
+    for(bool ud : dirUD) 
+            for(bool rl : dirRL)
+                if(board->canJump(move,rl,ud)){
+                    return true;
+                }
+    return false;
+
+}
+
 int GameMaster::whoWon(){
     if((board->getRedNumPieces() == 1 && board->getWhiteNumPieces() == 1)) return 2;
     if(board ->getRedNumPieces() == 0) return 1;
@@ -237,5 +271,10 @@ int GameMaster::whoWon(){
 }
 
 bool GameMaster::getPlayerPlaying(){
+    return player;
+}
+
+bool GameMaster:: changePlayerPlaying(){
+    player = !player;
     return player;
 }

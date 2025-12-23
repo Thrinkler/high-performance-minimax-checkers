@@ -1,3 +1,6 @@
 /.vscode
 mi_programa
 tests
+.DS_Store
+mi_programa_debug
+*.dSYM

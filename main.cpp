@@ -7,89 +7,51 @@
 using namespace std;
 
 
-string print(Bitboard bitboard){
-    string board;
-    
-    for(int i = 0; i < 8; i++){
-        board+=to_string(i);
-        for(int j = 0; j < 8; j++){
-            if(bitboard%2 == 1){
-                board += "|#";
-            }
-            else{
-                board += "| ";
-            }
-            bitboard/=2;
-
-        }
-        board+= "|\n";
-    }
-    board+="  0 1 2 3 4 5 6 7";
-
-    return board;
-}
-
 void showBoard(GameMaster& gameMaster, Board& board){
     cout << (gameMaster.getPlayerPlaying()? "White player": "Red Player") <<endl;
-    //cout<< "possible pieces to move:"<< endl;
-    //cout << print(gameMaster.getPlayerPlaying()?gameMaster.getWhiteMoves():gameMaster.getRedMoves())<< endl;
-    //cout<< "possible Moves:"<< endl;
-    /*
-    vector<Move> possibleMoves = gameMaster.getPossibleMoves();
-
-    for(auto move: possibleMoves){
-        cout << move.str() << ",";
-    }cout<< endl;
-    */
     cout << board.print() << endl;
 }
 
 
-void game1(GameMaster& gameMaster, Board& board){
-    gameMaster.movePiece(2,1,RIGHT,DOWN);
-    showBoard(gameMaster,board);
-
-    gameMaster.movePiece(5,4,LEFT,UP);
-    showBoard(gameMaster,board);
-    
-    gameMaster.movePiece(3,2,RIGHT,DOWN);
-    showBoard(gameMaster,board);
-
-    gameMaster.movePiece(6,3,RIGHT,UP);
-    showBoard(gameMaster,board);
-
-    gameMaster.movePiece(2,3,LEFT,DOWN);
-    showBoard(gameMaster,board);
-
-    gameMaster.movePiece(5,0,RIGHT,UP);
-    showBoard(gameMaster,board);
-
-    gameMaster.movePiece(3,2,LEFT,DOWN);
-    showBoard(gameMaster,board);
-    gameMaster.movePiece(7,2,RIGHT,UP);
-    showBoard(gameMaster,board);
-
-    gameMaster.movePiece(5,0,RIGHT,DOWN);
-    showBoard(gameMaster,board);
+pair <int, int> translatePos(int pos){
+    int r = 7 - (pos-1)/4;
+    int v = pos%4 ? 8-2*(pos%4): 0;
+    int c = (pos-1)%8>3? v+1 : v;
+    cout<< r << " " << c << endl;
+    return {r,c};
 }
+
+pair <string, string> translateNewPos(int pos1, int pos2){
+    pair<int,int> where = translatePos(pos1);
+    pair<int,int> to = translatePos(pos2);
+    string rl = (where.second - to.second)> 0 ? "L" : "R";
+    string ud = (where.first - to.first > 0) ? "U" : "D";
+    cout << rl << " " << ud << endl;
+    return {rl,ud};
+}
+
+
 
 void continuousGame(GameMaster& gameMaster, Board& board){
     string leftRight;
     string upDown;
-    int r,c;
-    cout << "Coordenadas?" << endl;
-    cin >> r >> c;
-    cout<< "Qué movimiento quieres? L:R Arriba o abajo? U:D" << endl; 
-    cin >> leftRight >> upDown;
+    int pos, pos2;
+    cout << "Posición?" << endl;
+    cin >> pos;
+    pair<int,int> tras = translatePos(pos);
+    cout << "a donde lo quieres mover?" << endl;
+    cin >> pos2;
+    pair<string, string> move = translateNewPos(pos,pos2);
 
-    if(r == -1 || leftRight == "UNDO"){
+    if(pos == -1 || leftRight == "UNDO"){
         gameMaster.undoMove();
         gameMaster.undoMove();
         gameMaster.undoMove();
     }
-    else gameMaster.movePiece(r,c,leftRight == "R",upDown == "D");
-    
+    else gameMaster.movePiece(tras.first,tras.second,move.first == "R",move.second == "D");
 }
+
+
 
 void playMinMax(Board& board, GameMaster &gm, Minimax& min,bool player){
     
@@ -102,7 +64,7 @@ void playMinMax(Board& board, GameMaster &gm, Minimax& min,bool player){
 
 void playMinVMin(Board &board, GameMaster& gameMaster, Minimax& minmax){
     for(int i = 0; i < 200; i++){
-        cout << "---------------------" << endl;
+        cout << "----------Turn "<< i << "-----------" << endl;
         cout << "W: " << board.getWhiteNumPieces() << " R: " << board.getRedNumPieces() << endl;
         cout << "WK: " << board.getWhiteKingNumPieces() << " RK: " << board.getRedKingNumPieces() << endl;
         showBoard(gameMaster,board);
@@ -110,7 +72,6 @@ void playMinVMin(Board &board, GameMaster& gameMaster, Minimax& minmax){
         cout << "Board evaluation for "<< playName << " is " 
         << minmax.evaluateBoard(gameMaster,gameMaster.getPlayerPlaying()) << endl;
         playMinMax(board,gameMaster,minmax,gameMaster.getPlayerPlaying());
-        
         cout << "---------------------" << endl;
         if(gameMaster.whoWon() != 0) break;
     }
@@ -118,27 +79,28 @@ void playMinVMin(Board &board, GameMaster& gameMaster, Minimax& minmax){
 }
 
 void playVMinMax(Board &board, GameMaster& gameMaster, Minimax& minmax){
-    for(int i = 0; i < 100; i++){
-        cout << "---------------------" << endl;
+    for(int i = 1; i < 300; i+=2){
+        cout << "----------Turn "<< i << "-----------" << endl;
         cout << "W: " << board.getWhiteNumPieces() << " R: " << board.getRedNumPieces() << endl;
         cout << "WK: " << board.getWhiteKingNumPieces() << " RK: " << board.getRedKingNumPieces() << endl;
         showBoard(gameMaster,board);
         string playName = gameMaster.getPlayerPlaying()? "white": "red";
         cout << "Board evaluation for "<< playName << " is " 
         << minmax.evaluateBoard(gameMaster,gameMaster.getPlayerPlaying()) << endl;
-        continuousGame(gameMaster,board);
+        playMinMax(board,gameMaster,minmax,gameMaster.getPlayerPlaying());
         cout << "---------------------" << endl;
         if(gameMaster.whoWon() != 0) break;
-        cout << "---------------------" << endl;
+        cout << "----------Turn "<< i +1<< "-----------" << endl;
         cout << "W: " << board.getWhiteNumPieces() << " R: " << board.getRedNumPieces() << endl;
         cout << "WK: " << board.getWhiteKingNumPieces() << " RK: " << board.getRedKingNumPieces() << endl;
         showBoard(gameMaster,board);
         playName = gameMaster.getPlayerPlaying()? "white": "red";
         cout << "Board evaluation for "<< playName << " is " 
         << minmax.evaluateBoard(gameMaster,gameMaster.getPlayerPlaying()) << endl;
-        playMinMax(board,gameMaster,minmax,gameMaster.getPlayerPlaying());
+        continuousGame(gameMaster,board);
         cout << "---------------------" << endl;
         if(gameMaster.whoWon() != 0) break;
+        
         
     }
     showBoard(gameMaster,board);
@@ -149,22 +111,15 @@ int main(){
 
     Board board;
 
-    GameMaster gameMaster(&board,false);
+    GameMaster gameMaster(&board,true);
+    cout<<gameMaster.print((1ULL<<16)-1)<< endl;
+    cout<< gameMaster.print(((1ULL<<16)-1)<<6*8)<<endl;
+    
 
     Minimax minmax = Minimax(15);
 
     cout << "Initial Board:" << endl;
-    playMinVMin(board,gameMaster,minmax);
-    //playVMinMax(board,gameMaster,minmax);
-    //test(gameMaster, board);
-    
-    
-    
-    //playMinMax(board,gameMaster,minmax,gameMaster.getPlayerPlaying());
-    
-
-    //game1(gameMaster,board);
-
-    //continuousGame(gameMaster,board);
+    //playMinVMin(board,gameMaster,minmax);
+    playVMinMax(board,gameMaster,minmax);
 
 }
