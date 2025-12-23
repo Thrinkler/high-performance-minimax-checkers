@@ -1,6 +1,10 @@
 /.vscode
+/.idea
 mi_programa
 tests
 .DS_Store
 mi_programa_debug
 *.dSYM
+/cmake-build-debug
+/CMakeLists.txt
+mi_juego
