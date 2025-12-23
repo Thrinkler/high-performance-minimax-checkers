@@ -11,7 +11,6 @@ static std::mt19937 g(rd());
 Minimax::Minimax(int depth) :maxDepth(depth){}
 
 int Minimax::evaluateBoard(GameMaster& gm, int turn, int depth){
-    BoardState boards = gm.board -> getAllBoards();
     int mult = 100;
 
     if(gm.whoWon() != 0){

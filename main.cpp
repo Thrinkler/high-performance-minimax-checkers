@@ -116,10 +116,10 @@ int main(){
     cout<< gameMaster.print(((1ULL<<16)-1)<<6*8)<<endl;
     
 
-    Minimax minmax = Minimax(15);
+    Minimax minmax = Minimax(10);
 
     cout << "Initial Board:" << endl;
-    //playMinVMin(board,gameMaster,minmax);
-    playVMinMax(board,gameMaster,minmax);
+    playMinVMin(board,gameMaster,minmax);
+    //playVMinMax(board,gameMaster,minmax);
 
 }

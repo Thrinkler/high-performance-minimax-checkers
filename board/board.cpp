@@ -66,9 +66,6 @@ int Board::jump(int r, int c,bool rl, bool ud){
 int Board::jump(Bitboard pos,bool rl, bool ud){
     auto [myBoard, enemyBoard] =  definePlayerEnemy(pos);
     Bitboard completeBoard = redPieces | whitePieces;
-
-    int udTo = ud? 1:-1;
-    int rlTo = rl? 1:-1;
     
     Bitboard ady = 0;
     Bitboard suc = 0;

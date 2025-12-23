@@ -162,10 +162,8 @@ bool GameMaster::movePiece(Bitboard pos, bool rl, bool ud){
                              board->getRedNumPieces(),
                              board->getWhiteKingNumPieces(), 
                              board->getRedKingNumPieces());
-    int playerKingNumBefore = player? board->getWhiteKingNumPieces(): board->getRedKingNumPieces();
     int turnContinues = board->movePiece(pos,rl,ud);
     if(turnContinues == 0) return false;
-    bool becameQueen = (player? board->getWhiteKingNumPieces(): board->getRedKingNumPieces()) > playerKingNumBefore;
 
     snap.changedTurns = (turnContinues == 1);
     prevBoard.emplace(snap);
@@ -199,16 +197,15 @@ vector<Move> GameMaster::getPossibleMoves(){
     out.reserve(20);
     Bitboard move;
    
-    vector <bool> dirUD = {UP, DOWN};
+    bool dirUD[] = {UP, DOWN};
     bool dirRL[] = {LEFT, RIGHT};
     
      bool canJ = false;
     while(validMoves){
         move = 1ULL<<__builtin_ctzll(validMoves);
-        if(move & board ->getQueenPieces()) dirUD = {UP, DOWN};
-        else{
-            if(player) dirUD = {UP};
-            else dirUD = {DOWN};
+        if(!(move & board ->getQueenPieces())){
+            if(player) dirUD[1] = UP;
+            else dirUD[0] = DOWN;
         }
        
         for(bool ud : dirUD) 
@@ -244,15 +241,12 @@ bool GameMaster::hasToJump(){
     Bitboard validMoves = multiJumpPiecePos != 0? multiJumpPiecePos : (player? getWhiteMoves(): getRedMoves());
     if(validMoves == 0) return false;
     Bitboard move = 1ULL<<__builtin_ctzll(validMoves);
-    vector <bool> dirUD = {UP, DOWN};
+    bool dirUD[] = {UP, DOWN};
     bool dirRL[] = {LEFT, RIGHT};
     
-     bool canJ = false;
-    
-    if(move & board ->getQueenPieces()) dirUD = {UP, DOWN};
-    else{
-        if(player) dirUD = {UP};
-        else dirUD = {DOWN};
+    if(!(move & board ->getQueenPieces())){
+        if(player) dirUD[1] = UP;
+        else dirUD[0] = DOWN;
     }
     for(bool ud : dirUD) 
             for(bool rl : dirRL)
