@@ -15,8 +15,8 @@ class Minimax {
     int numIt;
         unordered_map<BoardState, int> repetitionTable;
         int maxDepth;
-        pair<int,Move> minimax(GameMaster& gm, int depth, int alpha = -INFINITY, int beta = INFINITY, bool player=false);
-        pair<int,Move> quiescence(GameMaster& gm, int alpha = -INFINITY, int beta = INFINITY, bool player=false);
+        pair<int,Move> minimax(GameMaster& gm, int depth, int alpha = -1410065408, int beta = 1410065408, bool player=false);
+        pair<int,Move> quiescence(GameMaster& gm, int alpha = -1410065408, int beta = 1410065408, bool player=false);
 
         int heatmapValuation(GameMaster& gm, int turn);
 

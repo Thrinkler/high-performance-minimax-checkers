@@ -108,7 +108,25 @@ void playVMinMax(Board &board, GameMaster& gameMaster, Minimax& minmax){
 
 
 int main(){
+    std::cout << "--- DIAGNOSTICO DE RENDIMIENTO ---" << std::endl;
+    
+    #ifdef _MSC_VER
+        std::cout << "Compilador: MSVC (Windows)" << std::endl;
+    #endif
 
+    #ifdef __AVX2__
+        std::cout << "Instrucciones AVX2: ACTIVADAS (Rapido)" << std::endl;
+    #else
+        std::cout << "Instrucciones AVX2: DESACTIVADAS (Lento - Culpable probable)" << std::endl;
+    #endif
+
+    #ifdef NDEBUG
+        std::cout << "Modo: RELEASE (Optimizado)" << std::endl;
+    #else
+        std::cout << "Modo: DEBUG (Con frenos)" << std::endl;
+    #endif
+    
+    std::cout << "----------------------------------" << std::endl;
     Board board;
 
     GameMaster gameMaster(&board,true);
@@ -116,7 +134,7 @@ int main(){
     cout<< gameMaster.print(((1ULL<<16)-1)<<6*8)<<endl;
     
 
-    Minimax minmax = Minimax(12);
+    Minimax minmax = Minimax(10);
 
     cout << "Initial Board:" << endl;
     playMinVMin(board,gameMaster,minmax);

@@ -18,7 +18,11 @@ add_executable(MinimaxCheckers
         bots/random/random.cpp
         bots/random/random.h
         main.cpp)
-# Activar optimizaciones agresivas
-if(CMAKE_BUILD_TYPE MATCHES "Release")
-    add_compile_options(-O3 -march=native -ffast-math)
+if(MSVC)
+    target_compile_options(MinimaxCheckers PRIVATE /O2 /Oi /Ot /GL /arch:AVX2)
+    set_target_properties(MinimaxCheckers PROPERTIES LINK_FLAGS "/LTCG")
+    else()
+    if(CMAKE_BUILD_TYPE MATCHES "Release")
+        target_compile_options(MinimaxCheckers PRIVATE -O3 -march=native -ffast-math)
+    endif()
 endif()
