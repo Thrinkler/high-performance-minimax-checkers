@@ -89,7 +89,7 @@ make
 **Method:** Single-threaded execution via CLI.
 
 The following log shows highlights from a real game execution. Note **Turn 36**, where the engine hits a peak of **8,287,606 nodes/sec**.
-You can view the full, uninterrupted game log here: [gameLogs/gameExample.txt](https://github.com/Thrinkler/high-performance-minimax-checkers/blob/main/gameLogs/gameExample.txt
+You can view the full, uninterrupted game log here: [gameLogs/gameExample.txt](https://github.com/Thrinkler/high-performance-minimax-checkers/blob/main/gameLogs/gameExample.txt)
 
 <details>
 <summary><strong>Click here to expand parts of the Game Log (Start, Peak & End)</strong></summary>
