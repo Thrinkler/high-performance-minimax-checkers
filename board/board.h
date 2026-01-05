@@ -1,6 +1,7 @@
 #ifndef BOARD_H
 #define BOARD_H
 #include <string>
+#include <cstdint>
 #ifdef _MSC_VER
     #include <intrin.h>
     #define __builtin_popcountll __popcnt64
