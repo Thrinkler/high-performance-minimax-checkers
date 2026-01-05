@@ -1,0 +1,4210 @@
+----------Turn 0-----------
+W: 12 R: 12
+WK: 0 RK: 0
+White player
+0| |x| |x| |x| |x|
+1|x| |x| |x| |x| |
+2| |x| |x| |x| |x|
+3| | | | | | | | |
+4| | | | | | | | |
+5|o| |o| |o| |o| |
+6| |o| |o| |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 18816.9 ms
+Numero de iteraciones: 138767265
+Numero de iteraciones por segundo: 7374591
+Minimax valuation: 0
+Move made: Move piece in coords: 5 2 RIGHT  UP
+---------------------
+----------Turn 1-----------
+W: 12 R: 12
+WK: 0 RK: 0
+Red Player
+0| |x| |x| |x| |x|
+1|x| |x| |x| |x| |
+2| |x| |x| |x| |x|
+3| | | | | | | | |
+4| | | |o| | | | |
+5|o| | | |o| |o| |
+6| |o| |o| |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -2
+Playing as:red, depth = 13
+Tiempo de pensamiento: 15157.3 ms
+Numero de iteraciones: 113901871
+Numero de iteraciones por segundo: 7514668
+Minimax valuation: 0
+Move made: Move piece in coords: 2 5 LEFT  DOWN
+---------------------
+----------Turn 2-----------
+W: 12 R: 12
+WK: 0 RK: 0
+White player
+0| |x| |x| |x| |x|
+1|x| |x| |x| |x| |
+2| |x| |x| | | |x|
+3| | | | |x| | | |
+4| | | |o| | | | |
+5|o| | | |o| |o| |
+6| |o| |o| |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 10996.1 ms
+Numero de iteraciones: 73972551
+Numero de iteraciones por segundo: 6727178
+Minimax valuation: 0
+Move made: Move piece in coords: 4 3 RIGHT  UP
+---------------------
+----------Turn 3-----------
+W: 12 R: 11
+WK: 0 RK: 0
+Red Player
+0| |x| |x| |x| |x|
+1|x| |x| |x| |x| |
+2| |x| |x| |o| |x|
+3| | | | | | | | |
+4| | | | | | | | |
+5|o| | | |o| |o| |
+6| |o| |o| |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -90
+Playing as:red, depth = 13
+Tiempo de pensamiento: 23813.4 ms
+Numero de iteraciones: 166442189
+Numero de iteraciones por segundo: 6989430
+Minimax valuation: 0
+Move made: Move piece in coords: 1 6 LEFT  DOWN
+---------------------
+----------Turn 4-----------
+W: 11 R: 11
+WK: 0 RK: 0
+White player
+0| |x| |x| |x| |x|
+1|x| |x| |x| | | |
+2| |x| |x| | | |x|
+3| | | | |x| | | |
+4| | | | | | | | |
+5|o| | | |o| |o| |
+6| |o| |o| |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is -2
+Playing as:white, depth = 13
+Tiempo de pensamiento: 49120 ms
+Numero de iteraciones: 356358642
+Numero de iteraciones por segundo: 7254860
+Minimax valuation: 0
+Move made: Move piece in coords: 6 3 LEFT  UP
+---------------------
+----------Turn 5-----------
+W: 11 R: 11
+WK: 0 RK: 0
+Red Player
+0| |x| |x| |x| |x|
+1|x| |x| |x| | | |
+2| |x| |x| | | |x|
+3| | | | |x| | | |
+4| | | | | | | | |
+5|o| |o| |o| |o| |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 1
+Playing as:red, depth = 13
+Tiempo de pensamiento: 45228.6 ms
+Numero de iteraciones: 337611572
+Numero de iteraciones por segundo: 7464558
+Minimax valuation: 0
+Move made: Move piece in coords: 0 7 LEFT  DOWN
+---------------------
+----------Turn 6-----------
+W: 11 R: 11
+WK: 0 RK: 0
+White player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| |x| |x| | | |x|
+3| | | | |x| | | |
+4| | | | | | | | |
+5|o| |o| |o| |o| |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 52522.8 ms
+Numero de iteraciones: 415074493
+Numero de iteraciones por segundo: 7902749
+Minimax valuation: 0
+Move made: Move piece in coords: 5 0 RIGHT  UP
+---------------------
+----------Turn 7-----------
+W: 11 R: 11
+WK: 0 RK: 0
+Red Player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| |x| |x| | | |x|
+3| | | | |x| | | |
+4| |o| | | | | | |
+5| | |o| |o| |o| |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -1
+Playing as:red, depth = 13
+Tiempo de pensamiento: 20646.8 ms
+Numero de iteraciones: 144194194
+Numero de iteraciones por segundo: 6983836
+Minimax valuation: 0
+Move made: Move piece in coords: 3 4 RIGHT  DOWN
+---------------------
+----------Turn 8-----------
+W: 11 R: 11
+WK: 0 RK: 0
+White player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| |x| |x| | | |x|
+3| | | | | | | | |
+4| |o| | | |x| | |
+5| | |o| |o| |o| |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 2477.52 ms
+Numero de iteraciones: 18377421
+Numero de iteraciones por segundo: 7417658
+Minimax valuation: 0
+Move made: Move piece in coords: 5 4 RIGHT  UP
+---------------------
+----------Turn 9-----------
+W: 11 R: 10
+WK: 0 RK: 0
+Red Player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| |x| |x| | | |x|
+3| | | | | | |o| |
+4| |o| | | | | | |
+5| | |o| | | |o| |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -100
+Playing as:red, depth = 13
+Tiempo de pensamiento: 3370.35 ms
+Numero de iteraciones: 23331934
+Numero de iteraciones por segundo: 6922693
+Minimax valuation: 0
+Move made: Move piece in coords: 2 7 LEFT  DOWN
+---------------------
+----------Turn 10-----------
+W: 10 R: 10
+WK: 0 RK: 0
+White player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| |x| |x| | | | |
+3| | | | | | | | |
+4| |o| | | |x| | |
+5| | |o| | | |o| |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 8750.94 ms
+Numero de iteraciones: 67988561
+Numero de iteraciones por segundo: 7769290
+Minimax valuation: 0
+Move made: Move piece in coords: 5 6 LEFT  UP
+---------------------
+----------Turn 11-----------
+W: 10 R: 9
+WK: 0 RK: 0
+Red Player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| |x| |x| | | | |
+3| | | | |o| | | |
+4| |o| | | | | | |
+5| | |o| | | | | |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -100
+Playing as:red, depth = 13
+Tiempo de pensamiento: 15817 ms
+Numero de iteraciones: 106978011
+Numero de iteraciones por segundo: 6763478
+Minimax valuation: 0
+Move made: Move piece in coords: 2 3 RIGHT  DOWN
+---------------------
+----------Turn 12-----------
+W: 9 R: 9
+WK: 0 RK: 0
+White player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| |x| | | | | | |
+3| | | | | | | | |
+4| |o| | | |x| | |
+5| | |o| | | | | |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 2
+Playing as:white, depth = 13
+Tiempo de pensamiento: 29694 ms
+Numero de iteraciones: 233454642
+Numero de iteraciones por segundo: 7862006
+Minimax valuation: 0
+Move made: Move piece in coords: 4 1 RIGHT  UP
+---------------------
+----------Turn 13-----------
+W: 9 R: 9
+WK: 0 RK: 0
+Red Player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| |x| | | | | | |
+3| | |o| | | | | |
+4| | | | | |x| | |
+5| | |o| | | | | |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 8018.75 ms
+Numero de iteraciones: 60036735
+Numero de iteraciones por segundo: 7487039
+Minimax valuation: 0
+Move made: Move piece in coords: 2 1 RIGHT  DOWN
+---------------------
+----------Turn 14-----------
+W: 8 R: 9
+WK: 0 RK: 0
+White player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |x| |x| | |
+5| | |o| | | | | |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is -120
+Playing as:white, depth = 13
+Tiempo de pensamiento: 21268.7 ms
+Numero de iteraciones: 148932270
+Numero de iteraciones por segundo: 7002421
+Minimax valuation: 0
+Move made: Move piece in coords: 5 2 RIGHT  UP
+---------------------
+----------Turn 15-----------
+W: 8 R: 8
+WK: 0 RK: 0
+Red Player
+0| |x| |x| |x| | |
+1|x| |x| |x| |x| |
+2| | | | | | | | |
+3| | | | |o| | | |
+4| | | | | |x| | |
+5| | | | | | | | |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -1
+Playing as:red, depth = 13
+Tiempo de pensamiento: 49260.9 ms
+Numero de iteraciones: 381940704
+Numero de iteraciones por segundo: 7753429
+Minimax valuation: 0
+Move made: Move piece in coords: 1 6 LEFT  DOWN
+---------------------
+----------Turn 16-----------
+W: 8 R: 8
+WK: 0 RK: 0
+White player
+0| |x| |x| |x| | |
+1|x| |x| |x| | | |
+2| | | | | |x| | |
+3| | | | |o| | | |
+4| | | | | |x| | |
+5| | | | | | | | |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 8321.5 ms
+Numero de iteraciones: 61464245
+Numero de iteraciones por segundo: 7386195
+Minimax valuation: 0
+Move made: Move piece in coords: 3 4 RIGHT  UP
+---------------------
+----------Turn 17-----------
+W: 8 R: 7
+WK: 0 RK: 0
+Red Player
+0| |x| |x| |x| | |
+1|x| |x| |x| |o| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | | | | | | | |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -130
+Playing as:red, depth = 13
+Tiempo de pensamiento: 17614.9 ms
+Numero de iteraciones: 115793472
+Numero de iteraciones por segundo: 6573593
+Minimax valuation: 0
+Move made: Move piece in coords: 0 5 RIGHT  DOWN
+---------------------
+----------Turn 18-----------
+W: 7 R: 7
+WK: 0 RK: 0
+White player
+0| |x| |x| | | | |
+1|x| |x| |x| | | |
+2| | | | | | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | | | | | | | |
+6| |o| | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 64849.8 ms
+Numero de iteraciones: 516174150
+Numero de iteraciones por segundo: 7959535
+Minimax valuation: 0
+Move made: Move piece in coords: 6 1 RIGHT  UP
+---------------------
+----------Turn 19-----------
+W: 7 R: 7
+WK: 0 RK: 0
+Red Player
+0| |x| |x| | | | |
+1|x| |x| |x| | | |
+2| | | | | | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | | | |
+6| | | | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -1
+Playing as:red, depth = 13
+Tiempo de pensamiento: 84561.4 ms
+Numero de iteraciones: 584821180
+Numero de iteraciones por segundo: 6915933
+Minimax valuation: 0
+Move made: Move piece in coords: 1 2 RIGHT  DOWN
+---------------------
+----------Turn 20-----------
+W: 7 R: 7
+WK: 0 RK: 0
+White player
+0| |x| |x| | | | |
+1|x| | | |x| | | |
+2| | | |x| | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | | | |
+6| | | | | |o| |o|
+7|o| |o| |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is -1
+Playing as:white, depth = 13
+Tiempo de pensamiento: 83649.2 ms
+Numero de iteraciones: 608396262
+Numero de iteraciones por segundo: 7273186
+Minimax valuation: 0
+Move made: Move piece in coords: 7 2 RIGHT  UP
+---------------------
+----------Turn 21-----------
+W: 7 R: 7
+WK: 0 RK: 0
+Red Player
+0| |x| |x| | | | |
+1|x| | | |x| | | |
+2| | | |x| | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | | | |
+6| | | |o| |o| |o|
+7|o| | | |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 2
+Playing as:red, depth = 13
+Tiempo de pensamiento: 47347.1 ms
+Numero de iteraciones: 352696727
+Numero de iteraciones por segundo: 7449171
+Minimax valuation: 0
+Move made: Move piece in coords: 0 1 RIGHT  DOWN
+---------------------
+----------Turn 22-----------
+W: 7 R: 7
+WK: 0 RK: 0
+White player
+0| | | |x| | | | |
+1|x| |x| |x| | | |
+2| | | |x| | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | | | |
+6| | | |o| |o| |o|
+7|o| | | |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is -1
+Playing as:white, depth = 13
+Tiempo de pensamiento: 26703.5 ms
+Numero de iteraciones: 201043956
+Numero de iteraciones por segundo: 7528746
+Minimax valuation: 0
+Move made: Move piece in coords: 6 5 RIGHT  UP
+---------------------
+----------Turn 23-----------
+W: 7 R: 7
+WK: 0 RK: 0
+Red Player
+0| | | |x| | | | |
+1|x| |x| |x| | | |
+2| | | |x| | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | |o| |
+6| | | |o| | | |o|
+7|o| | | |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 5
+Playing as:red, depth = 13
+Tiempo de pensamiento: 15558.3 ms
+Numero de iteraciones: 104819782
+Numero de iteraciones por segundo: 6737222
+Minimax valuation: 0
+Move made: Move piece in coords: 1 0 RIGHT  DOWN
+---------------------
+----------Turn 24-----------
+W: 7 R: 7
+WK: 0 RK: 0
+White player
+0| | | |x| | | | |
+1| | |x| |x| | | |
+2| |x| |x| | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | |o| |
+6| | | |o| | | |o|
+7|o| | | |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 6036.89 ms
+Numero de iteraciones: 42332118
+Numero de iteraciones por segundo: 7012237
+Minimax valuation: 0
+Move made: Move piece in coords: 5 6 LEFT  UP
+---------------------
+----------Turn 25-----------
+W: 7 R: 6
+WK: 0 RK: 0
+Red Player
+0| | | |x| | | | |
+1| | |x| |x| | | |
+2| |x| |x| | | |x|
+3| | | | |o| | | |
+4| | | | | | | | |
+5| | |o| | | | | |
+6| | | |o| | | |o|
+7|o| | | |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -150
+Playing as:red, depth = 13
+Tiempo de pensamiento: 14363.7 ms
+Numero de iteraciones: 98150802
+Numero de iteraciones por segundo: 6833267
+Minimax valuation: 0
+Move made: Move piece in coords: 2 3 RIGHT  DOWN
+---------------------
+----------Turn 26-----------
+W: 6 R: 6
+WK: 0 RK: 0
+White player
+0| | | |x| | | | |
+1| | |x| |x| | | |
+2| |x| | | | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | | | |
+6| | | |o| | | |o|
+7|o| | | |o| |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 1
+Playing as:white, depth = 13
+Tiempo de pensamiento: 38228.6 ms
+Numero de iteraciones: 273691749
+Numero de iteraciones por segundo: 7159344
+Minimax valuation: 0
+Move made: Move piece in coords: 7 4 RIGHT  UP
+---------------------
+----------Turn 27-----------
+W: 6 R: 6
+WK: 0 RK: 0
+Red Player
+0| | | |x| | | | |
+1| | |x| |x| | | |
+2| |x| | | | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | | | |
+6| | | |o| |o| |o|
+7|o| | | | | |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 37808.8 ms
+Numero de iteraciones: 244941458
+Numero de iteraciones por segundo: 6478432
+Minimax valuation: 0
+Move made: Move piece in coords: 1 4 LEFT  DOWN
+---------------------
+----------Turn 28-----------
+W: 6 R: 6
+WK: 0 RK: 0
+White player
+0| | | |x| | | | |
+1| | |x| | | | | |
+2| |x| |x| | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | | | |
+6| | | |o| |o| |o|
+7|o| | | | | |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 26395.1 ms
+Numero de iteraciones: 172295751
+Numero de iteraciones por segundo: 6527556
+Minimax valuation: 0
+Move made: Move piece in coords: 6 5 RIGHT  UP
+---------------------
+----------Turn 29-----------
+W: 6 R: 6
+WK: 0 RK: 0
+Red Player
+0| | | |x| | | | |
+1| | |x| | | | | |
+2| |x| |x| | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | |o| |
+6| | | |o| | | |o|
+7|o| | | | | |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 4
+Playing as:red, depth = 13
+Tiempo de pensamiento: 5551.38 ms
+Numero de iteraciones: 43017710
+Numero de iteraciones por segundo: 7749006
+Minimax valuation: 0
+Move made: Move piece in coords: 0 3 RIGHT  DOWN
+---------------------
+----------Turn 30-----------
+W: 6 R: 6
+WK: 0 RK: 0
+White player
+0| | | | | | | | |
+1| | |x| |x| | | |
+2| |x| |x| | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | |o| |
+6| | | |o| | | |o|
+7|o| | | | | |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 3122.21 ms
+Numero de iteraciones: 24635185
+Numero de iteraciones por segundo: 7890310
+Minimax valuation: 0
+Move made: Move piece in coords: 5 6 LEFT  UP
+---------------------
+----------Turn 31-----------
+W: 6 R: 5
+WK: 0 RK: 0
+Red Player
+0| | | | | | | | |
+1| | |x| |x| | | |
+2| |x| |x| | | |x|
+3| | | | |o| | | |
+4| | | | | | | | |
+5| | |o| | | | | |
+6| | | |o| | | |o|
+7|o| | | | | |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -170
+Playing as:red, depth = 13
+Tiempo de pensamiento: 9303.19 ms
+Numero de iteraciones: 70795946
+Numero de iteraciones por segundo: 7609855
+Minimax valuation: 0
+Move made: Move piece in coords: 2 3 RIGHT  DOWN
+---------------------
+----------Turn 32-----------
+W: 5 R: 5
+WK: 0 RK: 0
+White player
+0| | | | | | | | |
+1| | |x| |x| | | |
+2| |x| | | | | |x|
+3| | | | | | | | |
+4| | | | | |x| | |
+5| | |o| | | | | |
+6| | | |o| | | |o|
+7|o| | | | | |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 32908.4 ms
+Numero de iteraciones: 232374296
+Numero de iteraciones por segundo: 7061244
+Minimax valuation: 0
+Move made: Move piece in coords: 5 2 RIGHT  UP
+---------------------
+----------Turn 33-----------
+W: 5 R: 5
+WK: 0 RK: 0
+Red Player
+0| | | | | | | | |
+1| | |x| |x| | | |
+2| |x| | | | | |x|
+3| | | | | | | | |
+4| | | |o| |x| | |
+5| | | | | | | | |
+6| | | |o| | | |o|
+7|o| | | | | |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 17169 ms
+Numero de iteraciones: 126749167
+Numero de iteraciones por segundo: 7382427
+Minimax valuation: 0
+Move made: Move piece in coords: 1 4 RIGHT  DOWN
+---------------------
+----------Turn 34-----------
+W: 5 R: 5
+WK: 0 RK: 0
+White player
+0| | | | | | | | |
+1| | |x| | | | | |
+2| |x| | | |x| |x|
+3| | | | | | | | |
+4| | | |o| |x| | |
+5| | | | | | | | |
+6| | | |o| | | |o|
+7|o| | | | | |o| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 10420.8 ms
+Numero de iteraciones: 82077270
+Numero de iteraciones por segundo: 7876294
+Minimax valuation: 0
+Move made: Move piece in coords: 7 6 LEFT  UP
+---------------------
+----------Turn 35-----------
+W: 5 R: 5
+WK: 0 RK: 0
+Red Player
+0| | | | | | | | |
+1| | |x| | | | | |
+2| |x| | | |x| |x|
+3| | | | | | | | |
+4| | | |o| |x| | |
+5| | | | | | | | |
+6| | | |o| |o| |o|
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 13525.6 ms
+Numero de iteraciones: 92471418
+Numero de iteraciones por segundo: 6836780
+Minimax valuation: 0
+Move made: Move piece in coords: 1 2 RIGHT  DOWN
+---------------------
+----------Turn 36-----------
+W: 5 R: 5
+WK: 0 RK: 0
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |x| |x| |x| |x|
+3| | | | | | | | |
+4| | | |o| |x| | |
+5| | | | | | | | |
+6| | | |o| |o| |o|
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 9405.27 ms
+Numero de iteraciones: 61044642
+Numero de iteraciones por segundo: 6490470
+Minimax valuation: -1
+Move made: Move piece in coords: 6 5 RIGHT  UP
+---------------------
+----------Turn 37-----------
+W: 5 R: 5
+WK: 0 RK: 0
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |x| |x| |x| |x|
+3| | | | | | | | |
+4| | | |o| |x| | |
+5| | | | | | |o| |
+6| | | |o| | | |o|
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 4
+Playing as:red, depth = 13
+Tiempo de pensamiento: 4804.95 ms
+Numero de iteraciones: 30563671
+Numero de iteraciones por segundo: 6360865
+Minimax valuation: 200
+Move made: Move piece in coords: 2 3 LEFT  DOWN
+---------------------
+----------Turn 38-----------
+W: 5 R: 5
+WK: 0 RK: 0
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |x| | | |x| |x|
+3| | |x| | | | | |
+4| | | |o| |x| | |
+5| | | | | | |o| |
+6| | | |o| | | |o|
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 184.74 ms
+Numero de iteraciones: 1616022
+Numero de iteraciones por segundo: 8747551
+Minimax valuation: -249
+Move made: Move piece in coords: 5 6 LEFT  UP
+---------------------
+----------Turn 39-----------
+W: 5 R: 4
+WK: 0 RK: 0
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |x| | | |x| |x|
+3| | |x| |o| | | |
+4| | | |o| | | | |
+5| | | | | | | | |
+6| | | |o| | | |o|
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 250
+Playing as:white, depth = 13
+Tiempo de pensamiento: 156.487 ms
+Numero de iteraciones: 1167990
+Numero de iteraciones por segundo: 7463802
+Minimax valuation: -249
+Move made: Move piece in coords: 3 4 RIGHT  UP
+---------------------
+----------Turn 40-----------
+W: 5 R: 3
+WK: 0 RK: 0
+Red Player
+0| | | | | | | | |
+1| | | | | | |o| |
+2| |x| | | | | |x|
+3| | |x| | | | | |
+4| | | |o| | | | |
+5| | | | | | | | |
+6| | | |o| | | |o|
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -400
+Playing as:red, depth = 13
+Tiempo de pensamiento: 218.186 ms
+Numero de iteraciones: 1701996
+Numero de iteraciones por segundo: 7800672
+Minimax valuation: 199
+Move made: Move piece in coords: 3 2 RIGHT  DOWN
+---------------------
+----------Turn 41-----------
+W: 4 R: 3
+WK: 0 RK: 0
+Red Player
+0| | | | | | | | |
+1| | | | | | |o| |
+2| |x| | | | | |x|
+3| | | | | | | | |
+4| | | | | | | | |
+5| | | | |x| | | |
+6| | | |o| | | |o|
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -250
+Playing as:red, depth = 13
+Tiempo de pensamiento: 121.655 ms
+Numero de iteraciones: 938176
+Numero de iteraciones por segundo: 7711780
+Minimax valuation: 199
+Move made: Move piece in coords: 5 4 LEFT  DOWN
+---------------------
+----------Turn 42-----------
+W: 3 R: 3
+WK: 0 RK: 1
+White player
+0| | | | | | | | |
+1| | | | | | |o| |
+2| |x| | | | | |x|
+3| | | | | | | | |
+4| | | | | | | | |
+5| | | | | | | | |
+6| | | | | | | |o|
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is -249
+Playing as:white, depth = 13
+Tiempo de pensamiento: 298.316 ms
+Numero de iteraciones: 2470298
+Numero de iteraciones por segundo: 8280822
+Minimax valuation: 0
+Move made: Move piece in coords: 1 6 RIGHT  UP
+---------------------
+----------Turn 43-----------
+W: 3 R: 3
+WK: 1 RK: 1
+Red Player
+0| | | | | | | |O|
+1| | | | | | | | |
+2| |x| | | | | |x|
+3| | | | | | | | |
+4| | | | | | | | |
+5| | | | | | | | |
+6| | | | | | | |o|
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 285.198 ms
+Numero de iteraciones: 2228971
+Numero de iteraciones por segundo: 7815529
+Minimax valuation: 0
+Move made: Move piece in coords: 2 1 RIGHT  DOWN
+---------------------
+----------Turn 44-----------
+W: 3 R: 3
+WK: 1 RK: 1
+White player
+0| | | | | | | |O|
+1| | | | | | | | |
+2| | | | | | | |x|
+3| | |x| | | | | |
+4| | | | | | | | |
+5| | | | | | | | |
+6| | | | | | | |o|
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 111.934 ms
+Numero de iteraciones: 912317
+Numero de iteraciones por segundo: 8150484
+Minimax valuation: 0
+Move made: Move piece in coords: 0 7 LEFT  DOWN
+---------------------
+----------Turn 45-----------
+W: 3 R: 3
+WK: 1 RK: 1
+Red Player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | | | |x|
+3| | |x| | | | | |
+4| | | | | | | | |
+5| | | | | | | | |
+6| | | | | | | |o|
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 354.01 ms
+Numero de iteraciones: 2460397
+Numero de iteraciones por segundo: 6950080
+Minimax valuation: -1
+Move made: Move piece in coords: 3 2 LEFT  DOWN
+---------------------
+----------Turn 46-----------
+W: 3 R: 3
+WK: 1 RK: 1
+White player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | | | |x|
+3| | | | | | | | |
+4| |x| | | | | | |
+5| | | | | | | | |
+6| | | | | | | |o|
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 146.194 ms
+Numero de iteraciones: 1289765
+Numero de iteraciones por segundo: 8822263
+Minimax valuation: 1
+Move made: Move piece in coords: 1 6 LEFT  DOWN
+---------------------
+----------Turn 47-----------
+W: 3 R: 3
+WK: 1 RK: 1
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | |O| |x|
+3| | | | | | | | |
+4| |x| | | | | | |
+5| | | | | | | | |
+6| | | | | | | |o|
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 83.6576 ms
+Numero de iteraciones: 543731
+Numero de iteraciones por segundo: 6499479
+Minimax valuation: -1
+Move made: Move piece in coords: 4 1 RIGHT  DOWN
+---------------------
+----------Turn 48-----------
+W: 3 R: 3
+WK: 1 RK: 1
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | |O| |x|
+3| | | | | | | | |
+4| | | | | | | | |
+5| | |x| | | | | |
+6| | | | | | | |o|
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 123.86 ms
+Numero de iteraciones: 1031045
+Numero de iteraciones por segundo: 8324274
+Minimax valuation: 200
+Move made: Move piece in coords: 6 7 LEFT  UP
+---------------------
+----------Turn 49-----------
+W: 3 R: 3
+WK: 1 RK: 1
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | |O| |x|
+3| | | | | | | | |
+4| | | | | | | | |
+5| | |x| | | |o| |
+6| | | | | | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 66.6041 ms
+Numero de iteraciones: 307535
+Numero de iteraciones por segundo: 4617356
+Minimax valuation: -251
+Move made: Move piece in coords: 2 7 LEFT  DOWN
+---------------------
+----------Turn 50-----------
+W: 3 R: 3
+WK: 1 RK: 1
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | |x| |
+4| | | | | | | | |
+5| | |x| | | |o| |
+6| | | | | | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 8.4e-05 ms
+Numero de iteraciones: 0
+Numero de iteraciones por segundo: 0
+Minimax valuation: 0
+Move made: Move piece in coords: 2 5 RIGHT  DOWN
+---------------------
+----------Turn 51-----------
+W: 3 R: 2
+WK: 1 RK: 1
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | |O|
+5| | |x| | | |o| |
+6| | | | | | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -251
+Playing as:red, depth = 13
+Tiempo de pensamiento: 139.374 ms
+Numero de iteraciones: 838119
+Numero de iteraciones por segundo: 6013449
+Minimax valuation: -250
+Move made: Move piece in coords: 5 2 RIGHT  DOWN
+---------------------
+----------Turn 52-----------
+W: 3 R: 2
+WK: 1 RK: 1
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | |O|
+5| | | | | | |o| |
+6| | | |x| | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 331
+Playing as:white, depth = 13
+Tiempo de pensamiento: 198.881 ms
+Numero de iteraciones: 1552268
+Numero de iteraciones por segundo: 7805005
+Minimax valuation: 200
+Move made: Move piece in coords: 4 7 LEFT  UP
+---------------------
+----------Turn 53-----------
+W: 3 R: 2
+WK: 1 RK: 1
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | | | | | | |
+5| | | | | | |o| |
+6| | | |x| | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -250
+Playing as:red, depth = 13
+Tiempo de pensamiento: 138.04 ms
+Numero de iteraciones: 735768
+Numero de iteraciones por segundo: 5330102
+Minimax valuation: -251
+Move made: Move piece in coords: 6 3 RIGHT  DOWN
+---------------------
+----------Turn 54-----------
+W: 3 R: 2
+WK: 1 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | | | | | | |
+5| | | | | | |o| |
+6| | | | | | | | |
+7|o| |X| |X| | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 1
+Playing as:white, depth = 13
+Tiempo de pensamiento: 303.512 ms
+Numero de iteraciones: 2264932
+Numero de iteraciones por segundo: 7462409
+Minimax valuation: 201
+Move made: Move piece in coords: 5 6 RIGHT  UP
+---------------------
+----------Turn 55-----------
+W: 3 R: 2
+WK: 1 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | | | | | |o|
+5| | | | | | | | |
+6| | | | | | | | |
+7|o| |X| |X| | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 97.6448 ms
+Numero de iteraciones: 642183
+Numero de iteraciones por segundo: 6576728
+Minimax valuation: -250
+Move made: Move piece in coords: 7 4 LEFT  UP
+---------------------
+----------Turn 56-----------
+W: 3 R: 2
+WK: 1 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | | | | | |o|
+5| | | | | | | | |
+6| | | |X| | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 136.771 ms
+Numero de iteraciones: 1073515
+Numero de iteraciones por segundo: 7849000
+Minimax valuation: 200
+Move made: Move piece in coords: 3 6 LEFT  UP
+---------------------
+----------Turn 57-----------
+W: 3 R: 2
+WK: 1 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | | | |o|
+5| | | | | | | | |
+6| | | |X| | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -1
+Playing as:red, depth = 13
+Tiempo de pensamiento: 133.488 ms
+Numero de iteraciones: 731532
+Numero de iteraciones por segundo: 5480119
+Minimax valuation: -251
+Move made: Move piece in coords: 6 3 LEFT  UP
+---------------------
+----------Turn 58-----------
+W: 3 R: 2
+WK: 1 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | | | |o|
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 1
+Playing as:white, depth = 13
+Tiempo de pensamiento: 204.63 ms
+Numero de iteraciones: 1641643
+Numero de iteraciones por segundo: 8022490
+Minimax valuation: 201
+Move made: Move piece in coords: 4 7 LEFT  UP
+---------------------
+----------Turn 59-----------
+W: 3 R: 2
+WK: 1 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | |o| |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -1
+Playing as:red, depth = 13
+Tiempo de pensamiento: 199.18 ms
+Numero de iteraciones: 1268685
+Numero de iteraciones por segundo: 6369544
+Minimax valuation: -250
+Move made: Move piece in coords: 5 2 LEFT  UP
+---------------------
+----------Turn 60-----------
+W: 3 R: 2
+WK: 1 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | |o| |
+4| |X| | | | | | |
+5| | | | | | | | |
+6| | | | | | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 1
+Playing as:white, depth = 13
+Tiempo de pensamiento: 463.169 ms
+Numero de iteraciones: 3609185
+Numero de iteraciones por segundo: 7792368
+Minimax valuation: 200
+Move made: Move piece in coords: 2 5 LEFT  UP
+---------------------
+----------Turn 61-----------
+W: 3 R: 2
+WK: 1 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| | | | | | | | |
+3| | | | | | |o| |
+4| |X| | | | | | |
+5| | | | | | | | |
+6| | | | | | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -1
+Playing as:red, depth = 13
+Tiempo de pensamiento: 169.589 ms
+Numero de iteraciones: 1111460
+Numero de iteraciones por segundo: 6553833
+Minimax valuation: -251
+Move made: Move piece in coords: 4 1 RIGHT  DOWN
+---------------------
+----------Turn 62-----------
+W: 3 R: 2
+WK: 1 RK: 2
+White player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| | | | | | | | |
+3| | | | | | |o| |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 1
+Playing as:white, depth = 13
+Tiempo de pensamiento: 245.394 ms
+Numero de iteraciones: 2006086
+Numero de iteraciones por segundo: 8174960
+Minimax valuation: 201
+Move made: Move piece in coords: 3 6 LEFT  UP
+---------------------
+----------Turn 63-----------
+W: 3 R: 2
+WK: 1 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| | | | | |o| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| |X| | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -1
+Playing as:red, depth = 13
+Tiempo de pensamiento: 166.549 ms
+Numero de iteraciones: 1100166
+Numero de iteraciones por segundo: 6605639
+Minimax valuation: -250
+Move made: Move piece in coords: 7 2 LEFT  UP
+---------------------
+----------Turn 64-----------
+W: 3 R: 2
+WK: 1 RK: 2
+White player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| | | | | |o| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| |X| | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 0
+Playing as:white, depth = 13
+Tiempo de pensamiento: 266.218 ms
+Numero de iteraciones: 2171686
+Numero de iteraciones por segundo: 8157534
+Minimax valuation: 200
+Move made: Move piece in coords: 1 4 RIGHT  UP
+---------------------
+----------Turn 65-----------
+W: 3 R: 2
+WK: 1 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |o| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| |X| | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is 0
+Playing as:red, depth = 13
+Tiempo de pensamiento: 50.9934 ms
+Numero de iteraciones: 331964
+Numero de iteraciones por segundo: 6509938
+Minimax valuation: -251
+Move made: Move piece in coords: 6 1 LEFT  UP
+---------------------
+----------Turn 66-----------
+W: 3 R: 2
+WK: 1 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |o| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 1
+Playing as:white, depth = 13
+Tiempo de pensamiento: 112.335 ms
+Numero de iteraciones: 885776
+Numero de iteraciones por segundo: 7885111
+Minimax valuation: 201
+Move made: Move piece in coords: 2 5 LEFT  UP
+---------------------
+----------Turn 67-----------
+W: 3 R: 2
+WK: 1 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | |o| | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -1
+Playing as:red, depth = 13
+Tiempo de pensamiento: 137.126 ms
+Numero de iteraciones: 809715
+Numero de iteraciones por segundo: 5904881
+Minimax valuation: -250
+Move made: Move piece in coords: 5 0 RIGHT  UP
+---------------------
+----------Turn 68-----------
+W: 3 R: 2
+WK: 1 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | |o| | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| |X| | | | | | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 2
+Playing as:white, depth = 13
+Tiempo de pensamiento: 248.354 ms
+Numero de iteraciones: 1718989
+Numero de iteraciones por segundo: 6921530
+Minimax valuation: 200
+Move made: Move piece in coords: 1 4 LEFT  UP
+---------------------
+----------Turn 69-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | |O| |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| |X| | | | | | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 193.341 ms
+Numero de iteraciones: 983885
+Numero de iteraciones por segundo: 5088850
+Minimax valuation: -251
+Move made: Move piece in coords: 4 1 RIGHT  UP
+---------------------
+----------Turn 70-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | |O| |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | |X| | | | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 198.572 ms
+Numero de iteraciones: 1254888
+Numero de iteraciones por segundo: 6319561
+Minimax valuation: 201
+Move made: Move piece in coords: 0 3 RIGHT  DOWN
+---------------------
+----------Turn 71-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | |O| | | |
+2| | | | | | | | |
+3| | |X| | | | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 375.687 ms
+Numero de iteraciones: 2310475
+Numero de iteraciones por segundo: 6149996
+Minimax valuation: -250
+Move made: Move piece in coords: 3 2 RIGHT  DOWN
+---------------------
+----------Turn 72-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | |O| | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |X| | | | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 431.793 ms
+Numero de iteraciones: 3036107
+Numero de iteraciones por segundo: 7031400
+Minimax valuation: 200
+Move made: Move piece in coords: 0 5 RIGHT  DOWN
+---------------------
+----------Turn 73-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | |O| |O| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |X| | | | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 246.625 ms
+Numero de iteraciones: 1348546
+Numero de iteraciones por segundo: 5468003
+Minimax valuation: -251
+Move made: Move piece in coords: 4 3 RIGHT  DOWN
+---------------------
+----------Turn 74-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | |O| |O| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | |X| |X| | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 444.324 ms
+Numero de iteraciones: 3418469
+Numero de iteraciones por segundo: 7693636
+Minimax valuation: 201
+Move made: Move piece in coords: 1 4 RIGHT  DOWN
+---------------------
+----------Turn 75-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | |X| |X| | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 273.751 ms
+Numero de iteraciones: 1782366
+Numero de iteraciones por segundo: 6510892
+Minimax valuation: -250
+Move made: Move piece in coords: 5 4 RIGHT  UP
+---------------------
+----------Turn 76-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | |X| | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 513.106 ms
+Numero de iteraciones: 3711349
+Numero de iteraciones por segundo: 7233109
+Minimax valuation: 200
+Move made: Move piece in coords: 1 6 LEFT  UP
+---------------------
+----------Turn 77-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | |X| | |
+5| | |X| | | | | |
+6| | | | | | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 286.369 ms
+Numero de iteraciones: 1800304
+Numero de iteraciones por segundo: 6286659
+Minimax valuation: -251
+Move made: Move piece in coords: 5 2 RIGHT  DOWN
+---------------------
+----------Turn 78-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | |X| | |
+5| | | | | | | | |
+6| | | |X| | | | |
+7|o| | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 388.738 ms
+Numero de iteraciones: 3166560
+Numero de iteraciones por segundo: 8145753
+Minimax valuation: 201
+Move made: Move piece in coords: 7 0 RIGHT  UP
+---------------------
+----------Turn 79-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | |X| | |
+5| | | | | | | | |
+6| |o| |X| | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 356.939 ms
+Numero de iteraciones: 2188537
+Numero de iteraciones por segundo: 6131409
+Minimax valuation: -251
+Move made: Move piece in coords: 4 5 LEFT  DOWN
+---------------------
+----------Turn 80-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | | | |X| | | |
+6| |o| |X| | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 790.162 ms
+Numero de iteraciones: 6570094
+Numero de iteraciones por segundo: 8314866
+Minimax valuation: 201
+Move made: Move piece in coords: 0 5 LEFT  DOWN
+---------------------
+----------Turn 81-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | | | |X| | | |
+6| |o| |X| | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 405.051 ms
+Numero de iteraciones: 2347736
+Numero de iteraciones por segundo: 5796153
+Minimax valuation: -251
+Move made: Move piece in coords: 5 4 RIGHT  UP
+---------------------
+----------Turn 82-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | |X| | |
+5| | | | | | | | |
+6| |o| |X| | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 779.652 ms
+Numero de iteraciones: 6364139
+Numero de iteraciones por segundo: 8162795
+Minimax valuation: 201
+Move made: Move piece in coords: 2 5 RIGHT  UP
+---------------------
+----------Turn 83-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | |O| |O| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | |X| | |
+5| | | | | | | | |
+6| |o| |X| | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 843.709 ms
+Numero de iteraciones: 5061321
+Numero de iteraciones por segundo: 5998897
+Minimax valuation: -251
+Move made: Move piece in coords: 4 5 LEFT  DOWN
+---------------------
+----------Turn 84-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | |O| |O| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | | | |X| | | |
+6| |o| |X| | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 904.673 ms
+Numero de iteraciones: 7875487
+Numero de iteraciones por segundo: 8705341
+Minimax valuation: 201
+Move made: Move piece in coords: 1 4 RIGHT  DOWN
+---------------------
+----------Turn 85-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | | | |X| | | |
+6| |o| |X| | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 343.904 ms
+Numero de iteraciones: 2173216
+Numero de iteraciones por segundo: 6319251
+Minimax valuation: -251
+Move made: Move piece in coords: 5 4 RIGHT  DOWN
+---------------------
+----------Turn 86-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5| | | | | | | | |
+6| |o| |X| |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 685.951 ms
+Numero de iteraciones: 6089486
+Numero de iteraciones por segundo: 8877431
+Minimax valuation: 201
+Move made: Move piece in coords: 2 5 RIGHT  DOWN
+---------------------
+----------Turn 87-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | | | | | | |
+5| | | | | | | | |
+6| |o| |X| |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 468.734 ms
+Numero de iteraciones: 2985764
+Numero de iteraciones por segundo: 6369853
+Minimax valuation: -251
+Move made: Move piece in coords: 6 5 LEFT  UP
+---------------------
+----------Turn 88-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | | | | | | |
+5| | | | |X| | | |
+6| |o| |X| | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 686.029 ms
+Numero de iteraciones: 5954267
+Numero de iteraciones por segundo: 8679316
+Minimax valuation: 201
+Move made: Move piece in coords: 6 1 LEFT  UP
+---------------------
+----------Turn 89-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | | | | | | |
+5|o| | | |X| | | |
+6| | | |X| | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 697.319 ms
+Numero de iteraciones: 4334210
+Numero de iteraciones por segundo: 6215529
+Minimax valuation: -251
+Move made: Move piece in coords: 6 3 RIGHT  DOWN
+---------------------
+----------Turn 90-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | | | | | | |
+5|o| | | |X| | | |
+6| | | | | | | | |
+7| | | | |X| | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 1293.96 ms
+Numero de iteraciones: 11155387
+Numero de iteraciones por segundo: 8621131
+Minimax valuation: 201
+Move made: Move piece in coords: 1 6 LEFT  UP
+---------------------
+----------Turn 91-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | | | | | | |
+5|o| | | |X| | | |
+6| | | | | | | | |
+7| | | | |X| | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 640.802 ms
+Numero de iteraciones: 3943695
+Numero de iteraciones por segundo: 6154315
+Minimax valuation: -252
+Move made: Move piece in coords: 5 4 LEFT  UP
+---------------------
+----------Turn 92-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| | | |X| | | | |
+5|o| | | | | | | |
+6| | | | | | | | |
+7| | | | |X| | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 722.047 ms
+Numero de iteraciones: 5869566
+Numero de iteraciones por segundo: 8129065
+Minimax valuation: 341
+Move made: Move piece in coords: 5 0 RIGHT  UP
+---------------------
+----------Turn 93-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| |o| |X| | | | |
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | |X| | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 697.935 ms
+Numero de iteraciones: 4448847
+Numero de iteraciones por segundo: 6374296
+Minimax valuation: -501
+Move made: Move piece in coords: 7 4 RIGHT  UP
+---------------------
+----------Turn 94-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | |O| |
+4| |o| |X| | | | |
+5| | | | | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 525.151 ms
+Numero de iteraciones: 4396932
+Numero de iteraciones por segundo: 8372694
+Minimax valuation: 341
+Move made: Move piece in coords: 3 6 LEFT  UP
+---------------------
+----------Turn 95-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| |o| |X| | | | |
+5| | | | | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 711.329 ms
+Numero de iteraciones: 4675280
+Numero de iteraciones por segundo: 6572596
+Minimax valuation: -501
+Move made: Move piece in coords: 4 3 LEFT  DOWN
+---------------------
+----------Turn 96-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| |o| | | | | | |
+5| | |X| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 252
+Playing as:white, depth = 13
+Tiempo de pensamiento: 439.781 ms
+Numero de iteraciones: 3553337
+Numero de iteraciones por segundo: 8079788
+Minimax valuation: 341
+Move made: Move piece in coords: 4 1 LEFT  UP
+---------------------
+----------Turn 97-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3|o| | | | | | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 553.057 ms
+Numero de iteraciones: 3637583
+Numero de iteraciones por segundo: 6577231
+Minimax valuation: -501
+Move made: Move piece in coords: 5 2 RIGHT  UP
+---------------------
+----------Turn 98-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3|o| | | | | | | |
+4| | | |X| | | | |
+5| | | | | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 638.069 ms
+Numero de iteraciones: 3980990
+Numero de iteraciones por segundo: 6239121
+Minimax valuation: 341
+Move made: Move piece in coords: 0 5 RIGHT  DOWN
+---------------------
+----------Turn 99-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | |O| | |
+3|o| | | | | | | |
+4| | | |X| | | | |
+5| | | | | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 657.563 ms
+Numero de iteraciones: 4227030
+Numero de iteraciones por segundo: 6428328
+Minimax valuation: -501
+Move made: Move piece in coords: 4 3 LEFT  DOWN
+---------------------
+----------Turn 100-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | |O| | |
+3|o| | | | | | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 631.765 ms
+Numero de iteraciones: 4758131
+Numero de iteraciones por segundo: 7531490
+Minimax valuation: 341
+Move made: Move piece in coords: 2 5 LEFT  DOWN
+---------------------
+----------Turn 101-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | | | | |
+3|o| | | |O| | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 727.292 ms
+Numero de iteraciones: 4065969
+Numero de iteraciones por segundo: 5590556
+Minimax valuation: -501
+Move made: Move piece in coords: 5 2 RIGHT  DOWN
+---------------------
+----------Turn 102-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | | | | | | |
+3|o| | | |O| | | |
+4| | | | | | | | |
+5| | | | | | | | |
+6| | | |X| |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 856.044 ms
+Numero de iteraciones: 7244108
+Numero de iteraciones por segundo: 8462309
+Minimax valuation: 341
+Move made: Move piece in coords: 1 6 RIGHT  UP
+---------------------
+----------Turn 103-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | |O|
+1| | | | | | | | |
+2| | | | | | | | |
+3|o| | | |O| | | |
+4| | | | | | | | |
+5| | | | | | | | |
+6| | | |X| |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 373.504 ms
+Numero de iteraciones: 2498881
+Numero de iteraciones por segundo: 6690369
+Minimax valuation: -501
+Move made: Move piece in coords: 6 3 LEFT  UP
+---------------------
+----------Turn 104-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | |O|
+1| | | | | | | | |
+2| | | | | | | | |
+3|o| | | |O| | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 443.057 ms
+Numero de iteraciones: 3634541
+Numero de iteraciones por segundo: 8203330
+Minimax valuation: 341
+Move made: Move piece in coords: 3 4 LEFT  UP
+---------------------
+----------Turn 105-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | |O|
+1| | | | | | | | |
+2| | | |O| | | | |
+3|o| | | | | | | |
+4| | | | | | | | |
+5| | |X| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 667.953 ms
+Numero de iteraciones: 4396593
+Numero de iteraciones por segundo: 6582187
+Minimax valuation: -501
+Move made: Move piece in coords: 5 2 LEFT  UP
+---------------------
+----------Turn 106-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | |O|
+1| | | | | | | | |
+2| | | |O| | | | |
+3|o| | | | | | | |
+4| |X| | | | | | |
+5| | | | | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 366.01 ms
+Numero de iteraciones: 2906069
+Numero de iteraciones por segundo: 7939852
+Minimax valuation: 341
+Move made: Move piece in coords: 0 7 LEFT  DOWN
+---------------------
+----------Turn 107-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | |O| | | | |
+3|o| | | | | | | |
+4| |X| | | | | | |
+5| | | | | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 732.718 ms
+Numero de iteraciones: 4231016
+Numero de iteraciones por segundo: 5774414
+Minimax valuation: -501
+Move made: Move piece in coords: 6 5 RIGHT  UP
+---------------------
+----------Turn 108-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | |O| |
+2| | | |O| | | | |
+3|o| | | | | | | |
+4| |X| | | | | | |
+5| | | | | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 841.338 ms
+Numero de iteraciones: 6628320
+Numero de iteraciones por segundo: 7878311
+Minimax valuation: 341
+Move made: Move piece in coords: 2 3 RIGHT  UP
+---------------------
+----------Turn 109-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | |O| |O| |
+2| | | | | | | | |
+3|o| | | | | | | |
+4| |X| | | | | | |
+5| | | | | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 678.862 ms
+Numero de iteraciones: 4442789
+Numero de iteraciones por segundo: 6544462
+Minimax valuation: -501
+Move made: Move piece in coords: 4 1 RIGHT  DOWN
+---------------------
+----------Turn 110-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | |O| |O| |
+2| | | | | | | | |
+3|o| | | | | | | |
+4| | | | | | | | |
+5| | |X| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 659.953 ms
+Numero de iteraciones: 5606852
+Numero de iteraciones por segundo: 8495829
+Minimax valuation: 341
+Move made: Move piece in coords: 1 6 RIGHT  DOWN
+---------------------
+----------Turn 111-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| | | | | | | |O|
+3|o| | | | | | | |
+4| | | | | | | | |
+5| | |X| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 719.038 ms
+Numero de iteraciones: 4914838
+Numero de iteraciones por segundo: 6835298
+Minimax valuation: -501
+Move made: Move piece in coords: 5 2 LEFT  UP
+---------------------
+----------Turn 112-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| | | | | | | |O|
+3|o| | | | | | | |
+4| |X| | | | | | |
+5| | | | | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 440.85 ms
+Numero de iteraciones: 3689067
+Numero de iteraciones por segundo: 8368073
+Minimax valuation: 341
+Move made: Move piece in coords: 1 4 RIGHT  UP
+---------------------
+----------Turn 113-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | | | |O|
+3|o| | | | | | | |
+4| |X| | | | | | |
+5| | | | | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 350.123 ms
+Numero de iteraciones: 2559423
+Numero de iteraciones por segundo: 7310075
+Minimax valuation: -501
+Move made: Move piece in coords: 5 6 RIGHT  UP
+---------------------
+----------Turn 114-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| | | | | | | |O|
+3|o| | | | | | | |
+4| |X| | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 251
+Playing as:white, depth = 13
+Tiempo de pensamiento: 138.73 ms
+Numero de iteraciones: 1109523
+Numero de iteraciones por segundo: 7997707
+Minimax valuation: 341
+Move made: Move piece in coords: 3 0 RIGHT  UP
+---------------------
+----------Turn 115-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| |o| | | | | |O|
+3| | | | | | | | |
+4| |X| | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 97.6066 ms
+Numero de iteraciones: 629975
+Numero de iteraciones por segundo: 6454226
+Minimax valuation: -501
+Move made: Move piece in coords: 4 1 LEFT  UP
+---------------------
+----------Turn 116-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1| | | | | | | | |
+2| |o| | | | | |O|
+3|X| | | | | | | |
+4| | | | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 252
+Playing as:white, depth = 13
+Tiempo de pensamiento: 134.948 ms
+Numero de iteraciones: 943433
+Numero de iteraciones por segundo: 6991061
+Minimax valuation: 341
+Move made: Move piece in coords: 2 1 LEFT  UP
+---------------------
+----------Turn 117-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1|o| | | | | | | |
+2| | | | | | | |O|
+3|X| | | | | | | |
+4| | | | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 85.8367 ms
+Numero de iteraciones: 436642
+Numero de iteraciones por segundo: 5086888
+Minimax valuation: -501
+Move made: Move piece in coords: 4 7 LEFT  DOWN
+---------------------
+----------Turn 118-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1|o| | | | | | | |
+2| | | | | | | |O|
+3|X| | | | | | | |
+4| | | | | | | | |
+5| | | | | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 252
+Playing as:white, depth = 13
+Tiempo de pensamiento: 161.709 ms
+Numero de iteraciones: 1000788
+Numero de iteraciones por segundo: 6188833
+Minimax valuation: 341
+Move made: Move piece in coords: 2 7 LEFT  UP
+---------------------
+----------Turn 119-----------
+W: 3 R: 2
+WK: 2 RK: 2
+Red Player
+0| | | | | |O| | |
+1|o| | | | | |O| |
+2| | | | | | | | |
+3|X| | | | | | | |
+4| | | | | | | | |
+5| | | | | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -201
+Playing as:red, depth = 13
+Tiempo de pensamiento: 158.388 ms
+Numero de iteraciones: 735348
+Numero de iteraciones por segundo: 4642712
+Minimax valuation: -501
+Move made: Move piece in coords: 5 6 RIGHT  UP
+---------------------
+----------Turn 120-----------
+W: 3 R: 2
+WK: 2 RK: 2
+White player
+0| | | | | |O| | |
+1|o| | | | | |O| |
+2| | | | | | | | |
+3|X| | | | | | | |
+4| | | | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 252
+Playing as:white, depth = 13
+Tiempo de pensamiento: 133.925 ms
+Numero de iteraciones: 776788
+Numero de iteraciones por segundo: 5800171
+Minimax valuation: 341
+Move made: Move piece in coords: 1 0 RIGHT  UP
+---------------------
+----------Turn 121-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | |O| | |
+1| | | | | | |O| |
+2| | | | | | | | |
+3|X| | | | | | | |
+4| | | | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 210.378 ms
+Numero de iteraciones: 893853
+Numero de iteraciones por segundo: 4248786
+Minimax valuation: -501
+Move made: Move piece in coords: 3 0 RIGHT  UP
+---------------------
+----------Turn 122-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | |O| | |
+1| | | | | | |O| |
+2| |X| | | | | | |
+3| | | | | | | | |
+4| | | | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 266.155 ms
+Numero de iteraciones: 1593886
+Numero de iteraciones por segundo: 5988556
+Minimax valuation: 341
+Move made: Move piece in coords: 1 6 LEFT  DOWN
+---------------------
+----------Turn 123-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | |O| | |
+1| | | | | | | | |
+2| |X| | | |O| | |
+3| | | | | | | | |
+4| | | | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 212.44 ms
+Numero de iteraciones: 896414
+Numero de iteraciones por segundo: 4219610
+Minimax valuation: -501
+Move made: Move piece in coords: 2 1 LEFT  DOWN
+---------------------
+----------Turn 124-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3|X| | | | | | | |
+4| | | | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 666.361 ms
+Numero de iteraciones: 4449830
+Numero de iteraciones por segundo: 6677802
+Minimax valuation: 341
+Move made: Move piece in coords: 2 5 LEFT  UP
+---------------------
+----------Turn 125-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | |O| | |
+1| | | | |O| | | |
+2| | | | | | | | |
+3|X| | | | | | | |
+4| | | | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 192.853 ms
+Numero de iteraciones: 914742
+Numero de iteraciones por segundo: 4743212
+Minimax valuation: -501
+Move made: Move piece in coords: 3 0 RIGHT  DOWN
+---------------------
+----------Turn 126-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | |O| | |
+1| | | | |O| | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| |X| | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 372.539 ms
+Numero de iteraciones: 2491415
+Numero de iteraciones por segundo: 6687666
+Minimax valuation: 341
+Move made: Move piece in coords: 1 4 RIGHT  DOWN
+---------------------
+----------Turn 127-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| |X| | | | | |X|
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 270.773 ms
+Numero de iteraciones: 1338588
+Numero de iteraciones por segundo: 4943586
+Minimax valuation: -501
+Move made: Move piece in coords: 4 7 LEFT  DOWN
+---------------------
+----------Turn 128-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | |O| | |
+1| | | | | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| |X| | | | | | |
+5| | | | | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 627.35 ms
+Numero de iteraciones: 4320623
+Numero de iteraciones por segundo: 6887097
+Minimax valuation: 341
+Move made: Move piece in coords: 0 1 RIGHT  DOWN
+---------------------
+----------Turn 129-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | |O| | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| |X| | | | | | |
+5| | | | | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 455.06 ms
+Numero de iteraciones: 2157066
+Numero de iteraciones por segundo: 4740182
+Minimax valuation: -501
+Move made: Move piece in coords: 5 6 RIGHT  DOWN
+---------------------
+----------Turn 130-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | |O| | |
+1| | |O| | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| |X| | | | | | |
+5| | | | | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 879.862 ms
+Numero de iteraciones: 6672981
+Numero de iteraciones por segundo: 7584119
+Minimax valuation: 341
+Move made: Move piece in coords: 2 5 LEFT  DOWN
+---------------------
+----------Turn 131-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | | | |O| | | |
+4| |X| | | | | | |
+5| | | | | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 499.896 ms
+Numero de iteraciones: 2450141
+Numero de iteraciones por segundo: 4901300
+Minimax valuation: -501
+Move made: Move piece in coords: 6 7 LEFT  DOWN
+---------------------
+----------Turn 132-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | |O| | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | | | |O| | | |
+4| |X| | | | | | |
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 1437.03 ms
+Numero de iteraciones: 10011444
+Numero de iteraciones por segundo: 6966763
+Minimax valuation: 341
+Move made: Move piece in coords: 3 4 LEFT  DOWN
+---------------------
+----------Turn 133-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | |O| | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| |X| |O| | | | |
+5| | | | | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 832.333 ms
+Numero de iteraciones: 3196938
+Numero de iteraciones por segundo: 3840937
+Minimax valuation: -501
+Move made: Move piece in coords: 7 6 LEFT  UP
+---------------------
+----------Turn 134-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | |O| | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| |X| |O| | | | |
+5| | | | | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 1286.3 ms
+Numero de iteraciones: 8714169
+Numero de iteraciones por segundo: 6774610
+Minimax valuation: 501
+Move made: Move piece in coords: 1 2 RIGHT  UP
+---------------------
+----------Turn 135-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | |O| |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| |X| |O| | | | |
+5| | | | | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 908.282 ms
+Numero de iteraciones: 4737846
+Numero de iteraciones por segundo: 5216272
+Minimax valuation: -1001
+Move made: Move piece in coords: 4 1 LEFT  DOWN
+---------------------
+----------Turn 136-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | |O| |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |O| | | | |
+5|X| | | | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 554.479 ms
+Numero de iteraciones: 4274577
+Numero de iteraciones por segundo: 7709171
+Minimax valuation: 501
+Move made: Move piece in coords: 4 3 LEFT  DOWN
+---------------------
+----------Turn 137-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | |O| |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 304.288 ms
+Numero de iteraciones: 1667835
+Numero de iteraciones por segundo: 5481114
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 5 RIGHT  UP
+---------------------
+----------Turn 138-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | |O| |O| | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 432.185 ms
+Numero de iteraciones: 3334826
+Numero de iteraciones por segundo: 7716204
+Minimax valuation: 501
+Move made: Move piece in coords: 0 5 RIGHT  DOWN
+---------------------
+----------Turn 139-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | |O| | | | |
+1| | | | | | |O| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 495.512 ms
+Numero de iteraciones: 2569403
+Numero de iteraciones por segundo: 5185350
+Minimax valuation: -1001
+Move made: Move piece in coords: 5 6 RIGHT  UP
+---------------------
+----------Turn 140-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | |O| | | | |
+1| | | | | | |O| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | |X|
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 652.637 ms
+Numero de iteraciones: 5102413
+Numero de iteraciones por segundo: 7818144
+Minimax valuation: 501
+Move made: Move piece in coords: 0 3 LEFT  DOWN
+---------------------
+----------Turn 141-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | |O| | | |O| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | |X|
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 590.972 ms
+Numero de iteraciones: 2994844
+Numero de iteraciones por segundo: 5067654
+Minimax valuation: -1001
+Move made: Move piece in coords: 4 7 LEFT  DOWN
+---------------------
+----------Turn 142-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | |O| | | |O| |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 1064.8 ms
+Numero de iteraciones: 8739228
+Numero de iteraciones por segundo: 8207387
+Minimax valuation: 501
+Move made: Move piece in coords: 1 6 LEFT  DOWN
+---------------------
+----------Turn 143-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 1105.15 ms
+Numero de iteraciones: 5778886
+Numero de iteraciones por segundo: 5229058
+Minimax valuation: -1001
+Move made: Move piece in coords: 5 6 LEFT  DOWN
+---------------------
+----------Turn 144-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| | | | | |O| | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 1350.96 ms
+Numero de iteraciones: 9776154
+Numero de iteraciones por segundo: 7236454
+Minimax valuation: 501
+Move made: Move piece in coords: 2 5 LEFT  DOWN
+---------------------
+----------Turn 145-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | | | |O| | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 838.582 ms
+Numero de iteraciones: 3827698
+Numero de iteraciones por segundo: 4564488
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 5 RIGHT  DOWN
+---------------------
+----------Turn 146-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | | | |O| | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 1194.08 ms
+Numero de iteraciones: 9209449
+Numero de iteraciones por segundo: 7712559
+Minimax valuation: 501
+Move made: Move piece in coords: 1 2 LEFT  UP
+---------------------
+----------Turn 147-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | |O| | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 328.422 ms
+Numero de iteraciones: 1726785
+Numero de iteraciones por segundo: 5257828
+Minimax valuation: -1001
+Move made: Move piece in coords: 7 6 RIGHT  UP
+---------------------
+----------Turn 148-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | |O| | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 700.238 ms
+Numero de iteraciones: 5561443
+Numero de iteraciones por segundo: 7942220
+Minimax valuation: 501
+Move made: Move piece in coords: 3 4 LEFT  DOWN
+---------------------
+----------Turn 149-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |O| | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 343.614 ms
+Numero de iteraciones: 1918748
+Numero de iteraciones por segundo: 5584029
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 7 LEFT  UP
+---------------------
+----------Turn 150-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |O| | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 656.355 ms
+Numero de iteraciones: 5241021
+Numero de iteraciones por segundo: 7985037
+Minimax valuation: 501
+Move made: Move piece in coords: 0 1 LEFT  DOWN
+---------------------
+----------Turn 151-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |O| | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 433.459 ms
+Numero de iteraciones: 2310346
+Numero de iteraciones por segundo: 5330027
+Minimax valuation: -1001
+Move made: Move piece in coords: 5 6 LEFT  DOWN
+---------------------
+----------Turn 152-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |O| | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 458.096 ms
+Numero de iteraciones: 3665068
+Numero de iteraciones por segundo: 8000659
+Minimax valuation: 501
+Move made: Move piece in coords: 4 3 LEFT  UP
+---------------------
+----------Turn 153-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 445.67 ms
+Numero de iteraciones: 2631073
+Numero de iteraciones por segundo: 5903641
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 5 LEFT  UP
+---------------------
+----------Turn 154-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| |X| | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 365.761 ms
+Numero de iteraciones: 3081631
+Numero de iteraciones por segundo: 8425253
+Minimax valuation: 501
+Move made: Move piece in coords: 1 0 RIGHT  DOWN
+---------------------
+----------Turn 155-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| |X| | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 314.912 ms
+Numero de iteraciones: 1943203
+Numero de iteraciones por segundo: 6170619
+Minimax valuation: -1001
+Move made: Move piece in coords: 5 4 RIGHT  DOWN
+---------------------
+----------Turn 156-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 634.232 ms
+Numero de iteraciones: 5628624
+Numero de iteraciones por segundo: 8874711
+Minimax valuation: 501
+Move made: Move piece in coords: 2 1 RIGHT  UP
+---------------------
+----------Turn 157-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 528.22 ms
+Numero de iteraciones: 3265878
+Numero de iteraciones por segundo: 6182799
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 5 RIGHT  DOWN
+---------------------
+----------Turn 158-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 889.98 ms
+Numero de iteraciones: 8053366
+Numero de iteraciones por segundo: 9048927
+Minimax valuation: 501
+Move made: Move piece in coords: 1 2 LEFT  DOWN
+---------------------
+----------Turn 159-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 231.801 ms
+Numero de iteraciones: 1469110
+Numero de iteraciones por segundo: 6337811
+Minimax valuation: -1001
+Move made: Move piece in coords: 7 6 RIGHT  UP
+---------------------
+----------Turn 160-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 631.831 ms
+Numero de iteraciones: 5479386
+Numero de iteraciones por segundo: 8672232
+Minimax valuation: 501
+Move made: Move piece in coords: 3 2 RIGHT  UP
+---------------------
+----------Turn 161-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| |O| | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 442.969 ms
+Numero de iteraciones: 2621727
+Numero de iteraciones por segundo: 5918531
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 7 LEFT  DOWN
+---------------------
+----------Turn 162-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| |O| | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 976.412 ms
+Numero de iteraciones: 8099998
+Numero de iteraciones por segundo: 8295675
+Minimax valuation: 501
+Move made: Move piece in coords: 2 3 LEFT  UP
+---------------------
+----------Turn 163-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 205.281 ms
+Numero de iteraciones: 1258871
+Numero de iteraciones por segundo: 6132434
+Minimax valuation: -1001
+Move made: Move piece in coords: 7 6 LEFT  UP
+---------------------
+----------Turn 164-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 492.078 ms
+Numero de iteraciones: 3921671
+Numero de iteraciones por segundo: 7969616
+Minimax valuation: 501
+Move made: Move piece in coords: 2 1 RIGHT  DOWN
+---------------------
+----------Turn 165-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 583.438 ms
+Numero de iteraciones: 3643896
+Numero de iteraciones por segundo: 6245557
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 5 RIGHT  DOWN
+---------------------
+----------Turn 166-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 867.188 ms
+Numero de iteraciones: 7807218
+Numero de iteraciones por segundo: 9002912
+Minimax valuation: 501
+Move made: Move piece in coords: 1 2 LEFT  DOWN
+---------------------
+----------Turn 167-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 264.82 ms
+Numero de iteraciones: 1670447
+Numero de iteraciones por segundo: 6307866
+Minimax valuation: -1001
+Move made: Move piece in coords: 7 6 LEFT  UP
+---------------------
+----------Turn 168-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 427.237 ms
+Numero de iteraciones: 3748754
+Numero de iteraciones por segundo: 8774408
+Minimax valuation: 501
+Move made: Move piece in coords: 3 2 RIGHT  DOWN
+---------------------
+----------Turn 169-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | |O| | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 483.382 ms
+Numero de iteraciones: 3036986
+Numero de iteraciones por segundo: 6282789
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 5 RIGHT  UP
+---------------------
+----------Turn 170-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | |O| | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 611.221 ms
+Numero de iteraciones: 5299140
+Numero de iteraciones por segundo: 8669762
+Minimax valuation: 501
+Move made: Move piece in coords: 2 1 LEFT  UP
+---------------------
+----------Turn 171-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |O| | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 218.194 ms
+Numero de iteraciones: 1309230
+Numero de iteraciones por segundo: 6000297
+Minimax valuation: -1001
+Move made: Move piece in coords: 5 6 RIGHT  UP
+---------------------
+----------Turn 172-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | |O| | | |X|
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 467.08 ms
+Numero de iteraciones: 3929413
+Numero de iteraciones por segundo: 8412714
+Minimax valuation: 501
+Move made: Move piece in coords: 4 3 LEFT  UP
+---------------------
+----------Turn 173-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | |X|
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 245.552 ms
+Numero de iteraciones: 1487393
+Numero de iteraciones por segundo: 6057352
+Minimax valuation: -1001
+Move made: Move piece in coords: 4 7 LEFT  DOWN
+---------------------
+----------Turn 174-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 381.779 ms
+Numero de iteraciones: 3306473
+Numero de iteraciones por segundo: 8660701
+Minimax valuation: 501
+Move made: Move piece in coords: 1 0 RIGHT  UP
+---------------------
+----------Turn 175-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 587.987 ms
+Numero de iteraciones: 3643182
+Numero de iteraciones por segundo: 6196028
+Minimax valuation: -1001
+Move made: Move piece in coords: 5 6 RIGHT  DOWN
+---------------------
+----------Turn 176-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 499.157 ms
+Numero de iteraciones: 4292496
+Numero de iteraciones por segundo: 8599497
+Minimax valuation: 501
+Move made: Move piece in coords: 0 1 LEFT  DOWN
+---------------------
+----------Turn 177-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 409.326 ms
+Numero de iteraciones: 2499647
+Numero de iteraciones por segundo: 6106739
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 7 LEFT  UP
+---------------------
+----------Turn 178-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 441.4 ms
+Numero de iteraciones: 3688176
+Numero de iteraciones por segundo: 8355626
+Minimax valuation: 501
+Move made: Move piece in coords: 1 0 RIGHT  UP
+---------------------
+----------Turn 179-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 285.689 ms
+Numero de iteraciones: 1655500
+Numero de iteraciones por segundo: 5794760
+Minimax valuation: -1001
+Move made: Move piece in coords: 5 6 RIGHT  DOWN
+---------------------
+----------Turn 180-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | | | | | | |
+3| | |O| | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 319.252 ms
+Numero de iteraciones: 2819746
+Numero de iteraciones por segundo: 8832347
+Minimax valuation: 501
+Move made: Move piece in coords: 3 2 RIGHT  UP
+---------------------
+----------Turn 181-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | |O| | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 484.305 ms
+Numero de iteraciones: 2202597
+Numero de iteraciones por segundo: 4547949
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 7 LEFT  DOWN
+---------------------
+----------Turn 182-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | | | | |
+1| | | | | | | | |
+2| | | |O| | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 583.746 ms
+Numero de iteraciones: 3921547
+Numero de iteraciones por segundo: 6717893
+Minimax valuation: 501
+Move made: Move piece in coords: 2 3 LEFT  UP
+---------------------
+----------Turn 183-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| |O| | | | | | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 272.656 ms
+Numero de iteraciones: 1442345
+Numero de iteraciones por segundo: 5289974
+Minimax valuation: -1001
+Move made: Move piece in coords: 7 6 LEFT  UP
+---------------------
+----------Turn 184-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| |O| | | | | | |
+1| | |O| | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 289.784 ms
+Numero de iteraciones: 2061037
+Numero de iteraciones por segundo: 7112321
+Minimax valuation: 501
+Move made: Move piece in coords: 0 1 LEFT  DOWN
+---------------------
+----------Turn 185-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1|O| |O| | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | |X| | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 319.12 ms
+Numero de iteraciones: 1674154
+Numero de iteraciones por segundo: 5246158
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 5 LEFT  UP
+---------------------
+----------Turn 186-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1|O| |O| | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| |X| | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 315.447 ms
+Numero de iteraciones: 2389246
+Numero de iteraciones por segundo: 7574161
+Minimax valuation: 501
+Move made: Move piece in coords: 1 2 RIGHT  DOWN
+---------------------
+----------Turn 187-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | |O| | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| |X| | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 478.01 ms
+Numero de iteraciones: 2344027
+Numero de iteraciones por segundo: 4903716
+Minimax valuation: -1001
+Move made: Move piece in coords: 5 4 RIGHT  UP
+---------------------
+----------Turn 188-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | |O| | | | |
+3| | | | | | | | |
+4| | | | | |X| | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 895.433 ms
+Numero de iteraciones: 6404342
+Numero de iteraciones por segundo: 7152230
+Minimax valuation: 501
+Move made: Move piece in coords: 1 0 RIGHT  DOWN
+---------------------
+----------Turn 189-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| |O| | | | |
+3| | | | | | | | |
+4| | | | | |X| | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 709.4 ms
+Numero de iteraciones: 4044196
+Numero de iteraciones por segundo: 5700869
+Minimax valuation: -1001
+Move made: Move piece in coords: 4 5 RIGHT  DOWN
+---------------------
+----------Turn 190-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | | | | | | | |
+2| |O| |O| | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 990.333 ms
+Numero de iteraciones: 8297542
+Numero de iteraciones por segundo: 8378533
+Minimax valuation: 501
+Move made: Move piece in coords: 2 1 LEFT  UP
+---------------------
+----------Turn 191-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | |O| | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | |X| |
+6| | | | | | | | |
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 531.856 ms
+Numero de iteraciones: 3077017
+Numero de iteraciones por segundo: 5785429
+Minimax valuation: -1001
+Move made: Move piece in coords: 5 6 RIGHT  DOWN
+---------------------
+----------Turn 192-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1|O| | | | | | | |
+2| | | |O| | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 535.807 ms
+Numero de iteraciones: 4673340
+Numero de iteraciones por segundo: 8722059
+Minimax valuation: 501
+Move made: Move piece in coords: 2 3 LEFT  UP
+---------------------
+----------Turn 193-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1|O| |O| | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 141.649 ms
+Numero de iteraciones: 861873
+Numero de iteraciones por segundo: 6084587
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 7 LEFT  DOWN
+---------------------
+----------Turn 194-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1|O| |O| | | | | |
+2| | | | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 375.691 ms
+Numero de iteraciones: 3133438
+Numero de iteraciones por segundo: 8340473
+Minimax valuation: 501
+Move made: Move piece in coords: 1 0 RIGHT  DOWN
+---------------------
+----------Turn 195-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 272.477 ms
+Numero de iteraciones: 1323110
+Numero de iteraciones por segundo: 4855853
+Minimax valuation: -1001
+Move made: Move piece in coords: 7 6 RIGHT  UP
+---------------------
+----------Turn 196-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | | | | | | |
+1| | |O| | | | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 570.429 ms
+Numero de iteraciones: 4810474
+Numero de iteraciones por segundo: 8433077
+Minimax valuation: 501
+Move made: Move piece in coords: 1 2 RIGHT  UP
+---------------------
+----------Turn 197-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | |O| | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 471.162 ms
+Numero de iteraciones: 2374666
+Numero de iteraciones por segundo: 5040021
+Minimax valuation: -1001
+Move made: Move piece in coords: 6 7 LEFT  DOWN
+---------------------
+----------Turn 198-----------
+W: 3 R: 2
+WK: 3 RK: 2
+White player
+0| | | |O| | | | |
+1| | | | | | | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for white is 501
+Playing as:white, depth = 13
+Tiempo de pensamiento: 493.624 ms
+Numero de iteraciones: 3823415
+Numero de iteraciones por segundo: 7745596
+Minimax valuation: 501
+Move made: Move piece in coords: 0 3 RIGHT  DOWN
+---------------------
+----------Turn 199-----------
+W: 3 R: 2
+WK: 3 RK: 2
+Red Player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | | |
+7| | | | | | |X| |
+  0 1 2 3 4 5 6 7
+Board evaluation for red is -341
+Playing as:red, depth = 13
+Tiempo de pensamiento: 430.695 ms
+Numero de iteraciones: 2173331
+Numero de iteraciones por segundo: 5046106
+Minimax valuation: -1001
+Move made: Move piece in coords: 7 6 RIGHT  UP
+---------------------
+White player
+0| | | | | | | | |
+1| | | | |O| | | |
+2| |O| | | | | | |
+3| | | | | | | | |
+4| | | | | | | | |
+5|X| |O| | | | | |
+6| | | | | | | |X|
+7| | | | | | | | |
+  0 1 2 3 4 5 6 7

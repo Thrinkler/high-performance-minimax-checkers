@@ -20,7 +20,7 @@ int Minimax::evaluateBoard(GameMaster& gm, int turn, int depth){
     }
     int whiteVal = gm.board ->getWhiteNumPieces() + gm.board->getWhiteKingNumPieces();
     int redVal = gm.board->getRedNumPieces() +  gm.board->getRedKingNumPieces();
-    
+
     int valuation = turn> 0? whiteVal*mult / redVal : redVal*mult/whiteVal;
     int posNum = gm.numberOfMoves();
     gm.changePlayerPlaying();
@@ -28,7 +28,7 @@ int Minimax::evaluateBoard(GameMaster& gm, int turn, int depth){
     gm.changePlayerPlaying();
     int movCramp = posNum - opNum;
     if(opNum != 0 && gm.hasToJump()) movCramp = 0;
-    
+
     return (valuation-mult)*10 + movCramp + heatmapValuation(gm,turn);
 }
 
@@ -56,6 +56,7 @@ int Minimax::evaluateBoard(GameMaster& gm, bool player, int depth){
 
 pair<int,Move> Minimax::minimax(GameMaster& gm, bool player){
     string playName = player? "white, depth = ": "red, depth = ";
+    numIt = 0;
     cout<< "Playing as:" << playName<<maxDepth << endl;
     BoardState boards = gm.board -> getAllBoards();
     if(repetitionTable.find(boards) == repetitionTable.end()){
@@ -66,29 +67,34 @@ pair<int,Move> Minimax::minimax(GameMaster& gm, bool player){
     vector<Move> possibleMoves = gm.getPossibleMoves();
     if(!possibleMoves.size()) return  {-VALUE_WIN,emptyMove};
     pair<int,Move> firstMove = {evaluateBoard(gm, player, maxDepth),possibleMoves[0]};
-    pair<int,Move> ret = possibleMoves.size()>1? minimax(gm,maxDepth,-VALUE_WIN-1000,VALUE_WIN+1000,player) : firstMove; 
+    pair<int,Move> ret = possibleMoves.size()>1? minimax(gm,maxDepth,-VALUE_WIN-1000,VALUE_WIN+1000,player) : firstMove;
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::milli> duration = end - start;
-    std::cout << "Tiempo de pensamiento: " << duration.count() << " ms" << std::endl;
+    cout << "Tiempo de pensamiento: " << duration.count() << " ms" << std::endl;
+    double seconds = duration.count() / 1000.0;
+    long long nps = (seconds > 0.0001) ? (long long)(numIt / seconds) : 0;
+    cout << "Numero de iteraciones: " << numIt << std::endl;
+    cout << "Numero de iteraciones por segundo: " << nps << std::endl;
     return ret;
 }
 
 pair<int,Move> Minimax::minimax(GameMaster& gm, int depth, int alpha, int beta, bool player){
     int boardVal = player? 1:-1;
+
     if(gm.whoWon() != 0){
         return {evaluateBoard(gm, boardVal, depth),emptyMove};
     }
     if(depth == 0){
         return quiescence(gm,alpha,beta,player);
     }
-    
+    numIt++;
     vector<Move> possibleMoves = gm.getPossibleMoves();
-    
+
     if(!possibleMoves.size()) return  {-VALUE_WIN,emptyMove};
     int score;
     int bestScore = -VALUE_WIN;
     Move bestMove = possibleMoves[0];
-    
+
     std::shuffle(std::begin(possibleMoves), std::end(possibleMoves), g);
 
     BoardState boards = gm.board -> getAllBoards();
@@ -120,7 +126,7 @@ pair<int,Move> Minimax::minimax(GameMaster& gm, int depth, int alpha, int beta, 
         }
 
         alpha = std::max(alpha, bestScore);
-       
+
         if(alpha >= beta){
             break;
         }
@@ -131,13 +137,14 @@ pair<int,Move> Minimax::minimax(GameMaster& gm, int depth, int alpha, int beta, 
 }
 
 pair<int,Move> Minimax::quiescence(GameMaster& gm, int alpha, int beta, bool player){
+    numIt++;
     int boardVal = player? 1:-1;
-    
+
     int boardValuation = evaluateBoard(gm, boardVal, 0);
     if(boardValuation >= beta) return {beta, emptyMove};
-    
+
     if(! gm.numberOfMoves()) return  {-VALUE_WIN,emptyMove};
-    
+
 
     vector<Move> possibleMoves = gm.getPossibleMoves();
     int score;
@@ -168,7 +175,7 @@ pair<int,Move> Minimax::quiescence(GameMaster& gm, int alpha, int beta, bool pla
             bestMove = move;
         }
         alpha = std::max(alpha, bestScore);
-       
+
         if(alpha >= beta){
             break;
         }

@@ -130,8 +130,7 @@ bool Board::canJump(int r, int c, bool rl,bool ud){
 }
 
 bool Board::canJump(Bitboard pos, bool rl,bool ud){
-
-    auto [myBoard, enemyBoard] =  definePlayerEnemy(pos);
+    Bitboard &enemyBoard = (pos&redPieces)? whitePieces:redPieces;
     Bitboard completeBoard = redPieces | whitePieces;
 
     Bitboard ady = 0;
@@ -146,7 +145,7 @@ bool Board::canJump(Bitboard pos, bool rl,bool ud){
 
     if(ady == 0 || suc == 0) return false;
 
-    return ((ady & *enemyBoard)!= 0 && (suc & completeBoard) == 0);
+    return ((ady & enemyBoard)!= 0 && (suc & completeBoard) == 0);
 }
 
 
@@ -172,8 +171,7 @@ int Board::movePiece(Bitboard pos,bool rl){
 
 bool Board::canMove(Bitboard pos, bool rl, bool ud){
     if ((pos & queenPieces) == 0) {
-        if ((pos & redPieces) && !ud) return false;
-        if ((pos & whitePieces) && ud) return false;
+        if (((pos & redPieces) && !ud)|| ((pos & whitePieces) && ud)) return false;
     }
     Bitboard completeBoard = redPieces | whitePieces;
     
@@ -195,28 +193,28 @@ int Board::movePiece(int r, int c, bool rl, bool ud){
 
 int Board::movePiece(Bitboard pos, bool rl, bool ud){
     if(!locatePiece(pos)) return false;
-    auto [myBoard, enemyBoard] =  definePlayerEnemy(pos);
-    
+    Bitboard &myBoard = (redPieces&pos) == 0? whitePieces:redPieces;
+    Bitboard completeBoard = redPieces | whitePieces;
     Bitboard newPos = ud? rl ? ((pos & NOT_7_FILE) << 9) : ((pos & NOT_0_FILE) << 7):
                           rl ? ((pos & NOT_7_FILE) >> 7) : ((pos & NOT_0_FILE) >> 9);
     
     if(canJump(pos,rl,ud)) {
         return jump(pos,rl,ud);
     }
-    
-    if((newPos & *myBoard)!= 0 ||(newPos & *enemyBoard)!= 0 ) return false;
+
+    if ((newPos &  completeBoard) != 0) return false;
     
     if(newPos == 0) return false;
     if((pos& queenPieces) != 0){
         queenPieces &= ~pos;
         queenPieces |= newPos;
     }
-    *myBoard &= ~pos;
-    *myBoard |= newPos;
+    myBoard &= ~pos;
+    myBoard |= newPos;
     int r = __builtin_ctzll( newPos)/8;
     if((r == 0 || (r == 7))&& (queenPieces& newPos) == 0){
         queenPieces |= newPos;
-        int* myKingNum = (*myBoard&redPieces)!= 0? &redKingNum : &whiteKingNum;
+        int* myKingNum = (myBoard&redPieces)!= 0? &redKingNum : &whiteKingNum;
         (*myKingNum)++;
     }
     return true;

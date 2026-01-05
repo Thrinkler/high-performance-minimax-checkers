@@ -14,6 +14,7 @@ using namespace std;
 
 class Minimax {
     private:
+    int numIt;
         unordered_map<BoardState, int> repetitionTable;
         int maxDepth;
         pair<int,Move> minimax(GameMaster& gm, int depth, int alpha = -INFINITY, int beta = INFINITY, bool player=false);
