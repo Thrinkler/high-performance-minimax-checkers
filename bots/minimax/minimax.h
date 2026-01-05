@@ -2,10 +2,20 @@
 #define MINIMAX_H
 #include <cstdint>
 #include <cmath>
-#include <vector>
 #include <unordered_map>
 #include <random>
-#include <algorithm>
+
+#ifdef _MSC_VER
+    #include <intrin.h>
+    #define __builtin_popcountll __popcnt64
+    inline int __builtin_ctzll(unsigned long long mask) {
+        unsigned long index;
+        if (_BitScanForward64(&index, mask)) {
+            return index;
+        }
+        return 64;
+    }
+#endif
 
 #include "../../board/gameMaster.h"
 

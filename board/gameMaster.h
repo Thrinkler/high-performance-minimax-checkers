@@ -1,10 +1,20 @@
 #ifndef GAMEMASTER_H
 #define GAMEMASTER_H
-#include <cstdint>
 #include <string>
 #include <vector>
 #include <stack>
 #include "board.h"
+#ifdef _MSC_VER
+    #include <intrin.h>
+    #define __builtin_popcountll __popcnt64
+    inline int __builtin_ctzll(unsigned long long mask) {
+        unsigned long index;
+        if (_BitScanForward64(&index, mask)) {
+            return index;
+        }
+        return 64;
+    }
+#endif
 
 typedef uint64_t Bitboard;
 using namespace std;

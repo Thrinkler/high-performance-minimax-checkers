@@ -8,6 +8,8 @@ const int VALUE_WIN = 100000000;
 const Move emptyMove = Move(0,0,0);
 static std::random_device rd;
 static std::mt19937 g(rd());
+std::bernoulli_distribution should_shuffle(0.5);
+
 Minimax::Minimax(int depth) :maxDepth(depth){}
 
 int Minimax::evaluateBoard(GameMaster& gm, int turn, int depth){
@@ -94,8 +96,7 @@ pair<int,Move> Minimax::minimax(GameMaster& gm, int depth, int alpha, int beta, 
     int score;
     int bestScore = -VALUE_WIN;
     Move bestMove = possibleMoves[0];
-
-    std::shuffle(std::begin(possibleMoves), std::end(possibleMoves), g);
+    if (should_shuffle(g)) std::shuffle(std::begin(possibleMoves), std::end(possibleMoves), g);
 
     BoardState boards = gm.board -> getAllBoards();
     if(repetitionTable.find(boards) == repetitionTable.end()){
