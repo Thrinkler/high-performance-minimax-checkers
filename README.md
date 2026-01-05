@@ -77,11 +77,22 @@ mkdir build && cd build
 # 3. Configure CMake in Release mode (Crucial for performance!)
 cmake -DCMAKE_BUILD_TYPE=Release ..
 
+(Linux and MacOS)
+
 # 4. Compile
 make
 
 # 5. Run
 ./MinimaxCheckers
+
+(Windows)
+
+# 4. Compile
+cmake --build . --config Release
+
+# 5. Run
+.\MinimaxCheckers.exe
+
 ```
 
 # Execution block
