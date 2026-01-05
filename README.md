@@ -85,6 +85,10 @@ make
 ```
 
 # Execution block
+
+<details>
+<summary><strong>Click here to expand parts of the Game Log (Start, Peak & End)</strong></summary>
+    
 ```text
 0|#|#|#|#|#|#|#|#|
 1|#|#|#|#|#|#|#|#|
@@ -563,7 +567,7 @@ Red Player
 7| | | | | | | | |
   0 1 2 3 4 5 6 7
 ```
-
+</details>
 
 
 # How to contribute
