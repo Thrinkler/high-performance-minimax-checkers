@@ -6,5 +6,5 @@ tests
 mi_programa_debug
 *.dSYM
 /cmake-build-debug
-/CMakeLists.txt
+/cmake-build-release
 mi_juego
